@@ -6,20 +6,27 @@ import Logement from "./pages/Logement";
 import Apropos from "./pages/Apropos";
 import Error from "./pages/Error";
 import Header from "./components/Header";
+import { createGlobalStyle } from 'styled-components';
 
 const root = createRoot(document.getElementById("root"));
+
+const GlobalStyle = createGlobalStyle`
+    div {
+        font-family: 'Montserrat', Helvetica, sans-serif;
+    }
+`
 
 root.render(
   <React.StrictMode>
     <Router>
-    <Header />
+    <GlobalStyle />
+      <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Logement" element={<Logement />} />
         <Route exact path="/A_propos" element={<Apropos />} />
-        <Route path='*' element={<Error />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   </React.StrictMode>
 );
-
