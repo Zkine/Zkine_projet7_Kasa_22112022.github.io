@@ -1,6 +1,7 @@
 import logo from "../../assets/logo.svg";
 import styled from "styled-components";
-import colors from '../../utils/style/colors';
+import colors from "../../utils/style/colors";
+import { Link } from "react-router-dom"
 
 const Headerstyle = styled.header`
   position: relative;
@@ -13,7 +14,7 @@ const StyleUl = styled.ul`
   list-style: none;
 `;
 
-const AccueilLink = styled.a`
+const AccueilLink = styled(Link)`
   position: absolute;
   left: 75.08%;
   right: 13.95%;
@@ -37,8 +38,7 @@ const AccueilLink = styled.a`
   }
 `;
 
-
-const AproposLink = styled.a`
+const AproposLink = styled(Link)`
   position: absolute;
   left: 87%;
   top: 25%;
@@ -75,10 +75,10 @@ function Header({ children }) {
       <nav>
         <StyleUl>
           <li>
-            <AccueilLink href="/">Accueil</AccueilLink>
+            <AccueilLink to={`/`}>Accueil</AccueilLink>
           </li>
           <li>
-            <AproposLink href="/A_propos">A Propos</AproposLink>
+            <AproposLink to={`/A_propos`}>A Propos</AproposLink>
           </li>
         </StyleUl>
       </nav>

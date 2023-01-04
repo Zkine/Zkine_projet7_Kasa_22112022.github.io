@@ -2,6 +2,7 @@ import ImgHome from "../../assets/ImgHome.png";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import colors from '../../utils/style/colors'
 
 const DivStyle = styled.div`
   position: relative;
@@ -18,7 +19,7 @@ const H1style = styled.h1`
   transform: translate(-50%, -50%);
   font-size: 48px;
   line-height: 142.6%;
-  color: #ffffff;
+  color: ${colors.secondary};
   z-index: 1;
 `;
 
@@ -36,7 +37,7 @@ const SectionStyle = styled.section`
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 60px;
-  background-color: #f7f7f7;
+  background-color: ${colors.backgroundLight};
   border-radius: 25px;
   padding: 20px 0px 20px 0px;
 `;
@@ -60,7 +61,7 @@ const StyleFigcaption = styled.figcaption`
   position: absolute;
   bottom: 15px;
   left: 15px;
-  color: #ffffff;
+  color: ${colors.secondary};
   width: 220px;
 `;
 
@@ -79,7 +80,6 @@ function Home() {
         return response.json();
       })
       .then(function (data) {
-        console.log(data);
         setData(data);
       })
       .catch(function (err) {
@@ -100,7 +100,7 @@ function Home() {
         <section>
           <DivStyle>
             <H1style>Chez vous, partout et ailleurs</H1style>
-            <Imgstyle src={ImgHome} alt="Logo Kasa" />
+            <Imgstyle src={ImgHome} alt="Image de montagne" />
           </DivStyle>
         </section>
         <SectionStyle>
