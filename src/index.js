@@ -6,7 +6,8 @@ import Logement from "./pages/Logement";
 import Apropos from "./pages/Apropos";
 import Error from "./pages/Error";
 import Header from "./components/Header";
-import { createGlobalStyle } from 'styled-components';
+import Footer from "./components/Footer";
+import { createGlobalStyle } from "styled-components";
 
 const root = createRoot(document.getElementById("root"));
 
@@ -14,12 +15,12 @@ const GlobalStyle = createGlobalStyle`
     div {
         font-family: 'Montserrat', Helvetica, sans-serif;
     }
-`
+`;
 
 root.render(
   <React.StrictMode>
     <Router>
-    <GlobalStyle />
+      <GlobalStyle />
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -27,6 +28,7 @@ root.render(
         <Route exact path="/A_propos" element={<Apropos />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );

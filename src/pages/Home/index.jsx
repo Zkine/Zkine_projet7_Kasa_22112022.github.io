@@ -2,7 +2,7 @@ import ImgHome from "../../assets/ImgHome.png";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import colors from '../../utils/style/colors'
+import colors from "../../utils/style/colors";
 
 const DivStyle = styled.div`
   position: relative;

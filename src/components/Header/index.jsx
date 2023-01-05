@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.svg";
 import styled from "styled-components";
 import colors from "../../utils/style/colors";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Headerstyle = styled.header`
   position: relative;
@@ -69,7 +69,7 @@ const LogoImage = styled.img`
   width: 210.32px;
 `;
 
-function Header({ children }) {
+function Header() {
   return (
     <Headerstyle>
       <nav>

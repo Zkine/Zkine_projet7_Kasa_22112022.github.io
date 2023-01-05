@@ -136,95 +136,100 @@ function Home() {
           </DivStyle>
         </section>
         <ArticleStyle>
-            {fiabiliteOpen ? (
-              <div>
-          <DivH1style>
-            <H1Style>{fiabilite.titre}</H1Style>
-            <SpanStyle
-              onClick={() => handleOnClickfiabilite(false)}
-            ></SpanStyle>
-          </DivH1style>
-          <DivPStyle>
-              <PStyle>{fiabilite.description}</PStyle>
-          </DivPStyle>
-          </div>
+          {fiabiliteOpen ? (
+            <div>
+              <DivH1style>
+                <H1Style>{fiabilite.titre}</H1Style>
+                <SpanStyle
+                  onClick={() => handleOnClickfiabilite(false)}
+                ></SpanStyle>
+              </DivH1style>
+              <DivPStyle>
+                <PStyle>{fiabilite.description}</PStyle>
+              </DivPStyle>
+            </div>
           ) : (
             <div>
-          <DivH1styleClose>
-            <H1Style>{fiabilite.titre}</H1Style>
-            <SpanStylebas
-              onClick={() => handleOnClickfiabilite(false)}
-            ></SpanStylebas>
-          </DivH1styleClose>
-          </div>
-            )}
+              <DivH1styleClose>
+                <H1Style>{fiabilite.titre}</H1Style>
+                <SpanStylebas
+                  onClick={() => handleOnClickfiabilite(false)}
+                ></SpanStylebas>
+              </DivH1styleClose>
+            </div>
+          )}
         </ArticleStyle>
         <ArticleStyle>
-        {respectOpen ? (
-              <div>
+          {respectOpen ? (
+            <div>
               <DivH1style>
-            <H1Style>{respect.titre}</H1Style>
-            <SpanStyle onClick={() => handleOnClickrespect(false)}></SpanStyle>
-          </DivH1style>
-          <DivPStyle>
-          <PStyle>{respect.description}</PStyle>
-          </DivPStyle>
-          </div>
+                <H1Style>{respect.titre}</H1Style>
+                <SpanStyle
+                  onClick={() => handleOnClickrespect(false)}
+                ></SpanStyle>
+              </DivH1style>
+              <DivPStyle>
+                <PStyle>{respect.description}</PStyle>
+              </DivPStyle>
+            </div>
           ) : (
             <div>
-          <DivH1styleClose>
-            <H1Style>{respect.titre}</H1Style>
-            <SpanStylebas
-              onClick={() => handleOnClickrespect(false)}
-            ></SpanStylebas>
-          </DivH1styleClose>
-          </div>
-            )}
+              <DivH1styleClose>
+                <H1Style>{respect.titre}</H1Style>
+                <SpanStylebas
+                  onClick={() => handleOnClickrespect(false)}
+                ></SpanStylebas>
+              </DivH1styleClose>
+            </div>
+          )}
         </ArticleStyle>
         <ArticleStyle>
-        {serviceOpen ? (
-              <div>
+          {serviceOpen ? (
+            <div>
               <DivH1style>
-            <H1Style>{service.titre}</H1Style>
-            <SpanStyle onClick={() => handleOnClickservice(false)}></SpanStyle>
-          </DivH1style>
-          <DivPStyle>
-          <PStyle>{service.description}</PStyle>
-          </DivPStyle>
-          </div>
+                <H1Style>{service.titre}</H1Style>
+                <SpanStyle
+                  onClick={() => handleOnClickservice(false)}
+                ></SpanStyle>
+              </DivH1style>
+              <DivPStyle>
+                <PStyle>{service.description}</PStyle>
+              </DivPStyle>
+            </div>
           ) : (
             <div>
-          <DivH1styleClose>
-            <H1Style>{service.titre}</H1Style>
-            <SpanStylebas
-              onClick={() => handleOnClickservice(false)}
-            ></SpanStylebas>
-          </DivH1styleClose>
-          </div>
-            )}
+              <DivH1styleClose>
+                <H1Style>{service.titre}</H1Style>
+                <SpanStylebas
+                  onClick={() => handleOnClickservice(false)}
+                ></SpanStylebas>
+              </DivH1styleClose>
+            </div>
+          )}
         </ArticleStyle>
         <ArticleStyle>
-
-        {sécuritéOpen ? (
-              <div>
+          {sécuritéOpen ? (
+            <div>
               <DivH1style>
-            <H1Style>{sécurité.titre}</H1Style>
-            <SpanStyle onClick={() => handleOnClicksécurité(false)}></SpanStyle>
-          </DivH1style>
-          <DivPStyle>
-          <PStyle>{sécurité.description}</PStyle>
-          </DivPStyle>
-          </div>
+                <H1Style>{sécurité.titre}</H1Style>
+                <SpanStyle
+                  onClick={() => handleOnClicksécurité(false)}
+                ></SpanStyle>
+              </DivH1style>
+              <DivPStyle>
+                <PStyle>{sécurité.description}</PStyle>
+              </DivPStyle>
+            </div>
           ) : (
             <div>
-          <DivH1styleClose>
-            <H1Style>{sécurité.titre}</H1Style>
-            <SpanStylebas
-              onClick={() => handleOnClicksécurité(false)}
-            ></SpanStylebas>
-          </DivH1styleClose>
-          </div>
-            )}
+              <DivH1styleClose>
+                <H1Style>{sécurité.titre}</H1Style>
+                <SpanStylebas
+                  onClick={() => handleOnClicksécurité(false)}
+                ></SpanStylebas>
+              </DivH1styleClose>
+            </div>
+          )}
         </ArticleStyle>
       </section>
     </main>
