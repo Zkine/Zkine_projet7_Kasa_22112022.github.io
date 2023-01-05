@@ -4,6 +4,7 @@ import colors from "../../utils/style/colors";
 
 const StyleFooter = styled.footer`
   background-color: #000000;
+  width: 1440px;
   height: 209px;
   display: flex;
   flex-direction: column-reverse;
