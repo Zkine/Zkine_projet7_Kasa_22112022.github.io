@@ -1,9 +1,9 @@
-import ImgPropos from "../../assets/ImgPropos.png";
+import ImgPropos from "../assets/ImgPropos.png";
 import styled from "styled-components";
-import colors from "../../utils/style/colors";
-import vectorhaut from "../../assets/vectorhaut.svg";
+import colors from "../styles/colors";
+import vectorhaut from "../assets/vectorhaut.svg";
+import vectorbas from "../assets/vectorbas.svg";
 import { useState } from "react";
-import vectorbas from "../../assets/vectorbas.svg";
 
 const DivStyle = styled.div`
   position: relative;
@@ -81,7 +81,7 @@ const PStyle = styled.p`
   padding: 20px 10px 10px 10px;
 `;
 
-function Home() {
+function About() {
   const [fiabiliteOpen, setIsOpenfiabilite] = useState(false);
   const [respectOpen, setIsOpenrespect] = useState(false);
   const [serviceOpen, setIsOpenservice] = useState(false);
@@ -236,4 +236,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;

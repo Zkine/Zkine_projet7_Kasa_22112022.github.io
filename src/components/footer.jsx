@@ -1,6 +1,6 @@
-import logoFooter from "../../assets/logoFooter.svg";
+import logoFooter from "../assets/logoFooter.svg";
 import styled from "styled-components";
-import colors from "../../utils/style/colors";
+import colors from "../styles/colors";
 
 const StyleFooter = styled.footer`
   background-color: #000000;

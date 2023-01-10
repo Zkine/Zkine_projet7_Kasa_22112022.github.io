@@ -1,6 +1,6 @@
-import logo from "../../assets/logo.svg";
+import logo from "../assets/logo.svg";
 import styled from "styled-components";
-import colors from "../../utils/style/colors";
+import colors from "../styles/colors";
 import { Link } from "react-router-dom";
 
 const Headerstyle = styled.header`

@@ -1,8 +1,9 @@
-import ImgHome from "../../assets/ImgHome.png";
+import ImgHome from "../assets/ImgHome.png";
 import styled from "styled-components";
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import colors from "../../utils/style/colors";
+import colors from "../styles/colors";
+import { Loader } from "../styles/Atoms";
+import { useFetch } from "../components/controllerFetch";
 
 const DivStyle = styled.div`
   position: relative;
@@ -66,33 +67,15 @@ const StyleFigcaption = styled.figcaption`
 `;
 
 function Home() {
-  const [data, setData] = useState([]);
-  const [error] = useState(false);
-
-  const getData = () => {
-    fetch("http://localhost:3000/data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        setData(data);
-      })
-      .catch(function (err) {
-        alert("Une erreur est survenue");
-      });
-  };
-  useEffect(() => {
-    getData();
-  }, []);
+  const { data, isLoading, error } = useFetch(
+    `http://localhost:3000/data.json`
+  );
+  const logementData = data;
 
   if (error) {
     return <span>Oups il y a eu un problème</span>;
   }
+  
 
   return (
     <main>
@@ -103,18 +86,21 @@ function Home() {
             <Imgstyle src={ImgHome} alt="Image de montagne" />
           </DivStyle>
         </section>
-        <SectionStyle>
-          {data &&
-            data.length > 0 &&
-            data.map((item) => (
-              <DivStyleImg key={item["id"]}>
-                <Link to={`/${item["id"]}`}>
-                  <StyleImg src={item["cover"]} alt={item["description"]} />
-                  <StyleFigcaption>{item["title"]}</StyleFigcaption>
-                </Link>
-              </DivStyleImg>
-            ))}
-        </SectionStyle>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <SectionStyle>
+            {logementData.forEach &&
+              logementData.map((item) => (
+                <DivStyleImg key={item["id"]}>
+                  <Link to={`/Logement/${item["id"]}`}>
+                    <StyleImg src={item["cover"]} alt={item["description"]} />
+                    <StyleFigcaption>{item["title"]}</StyleFigcaption>
+                  </Link>
+                </DivStyleImg>
+              ))}
+          </SectionStyle>
+        )}
       </article>
     </main>
   );

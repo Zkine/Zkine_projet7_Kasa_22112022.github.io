@@ -1,6 +1,6 @@
-import page404 from "../../assets/404.svg";
+import page404 from "../assets/404.svg";
 import styled from "styled-components";
-import colors from "../../utils/style/colors";
+import colors from "../styles/colors";
 import { Link } from "react-router-dom";
 
 const Stylesection = styled.section`
