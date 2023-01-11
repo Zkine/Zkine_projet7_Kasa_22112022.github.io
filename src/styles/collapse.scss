@@ -1,0 +1,64 @@
+@import"./colors.scss";
+
+
+.conteneurArticle {
+  background-color: $backgroundLight;
+  margin: auto;
+  width: 1024px;
+  border-radius: 5px;
+}
+
+.conteneurh1 {
+  width: 1024px;
+  height: 47px;
+  border-radius: 5px;
+  background-color: $primary;
+  position: relative;
+
+  &__h1 {
+    color: $secondary;
+    position: absolute;
+    left: 20px;
+    top: 20%;
+    margin: 0px;
+    font-size: 24px;
+
+    &__SpanStyle {
+      background-image: url(../assets/vectorhaut.svg);
+      position: absolute;
+      right: 20px;
+      top: 35%;
+      width: 24px;
+      height: 15px;
+
+      &__SpanStylebas {
+        background-image: url(../assets/vectorbas.svg);
+        position: absolute;
+        right: 20px;
+        top: 35%;
+        width: 24px;
+        height: 15px;
+
+        &__conteneurP {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+
+.content {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.contentShow {
+  color: $primary;
+  margin: auto;
+  font-size: 24px;
+  padding: 20px 10px 10px 10px;
+  max-height: 100%;
+  height: auto;
+}
+

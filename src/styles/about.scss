@@ -1,0 +1,18 @@
+
+.conteneurAbout {
+  height: auto;
+
+  &__conteneurimg {
+    position: relative;
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0px 60px 0px;
+
+    &__img {
+      height: 223px;
+      border-radius: 25px;
+      filter: brightness(60%);
+    }
+  }
+}

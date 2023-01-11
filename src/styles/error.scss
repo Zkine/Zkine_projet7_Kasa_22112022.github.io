@@ -1,0 +1,28 @@
+@import"./colors.scss";
+
+
+.stylesection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  height: 647px;
+
+  &__img {
+    height: 263px;
+    width: 597px;
+
+    &__p {
+      font-size: 36px;
+      color: $primary;
+
+      &__link {
+        font-size: 18px;
+        color: $primary;
+        margin-top: 100px;
+      }
+    }
+  }
+}

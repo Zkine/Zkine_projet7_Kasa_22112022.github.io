@@ -1,0 +1,72 @@
+@import"./colors.scss";
+
+
+.conteneur {
+    position: relative;
+    width: 65.16%;
+    height: 68px;
+    margin: auto;
+
+    &__ul {
+        list-style: none;
+
+        &__accueil {
+            position: absolute;
+            left: 75.08%;
+            right: 13.95%;
+            top: 25%;
+            bottom: 25%;
+            font-size: 20px;
+            line-height: 142.6%;
+            display: flex;
+            align-items: flex-end;
+            text-align: right;
+            color: $primary;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+                color: $primary;
+            }
+
+            &:active {
+                cursor: pointer;
+                color: $primary;
+            }
+
+            &__propos {
+                position: absolute;
+                left: 87%;
+                top: 25%;
+                bottom: 25%;
+                position: absolute;
+                font-size: 20px;
+                line-height: 142.6%;
+                display: flex;
+                align-items: flex-end;
+                text-align: right;
+                color: $primary;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    color: $primary;
+                }
+
+                &:active {
+                    cursor: pointer;
+                    color: $primary;
+                }
+
+                &__img {
+                    position: absolute;
+                    right: 80%;
+                    height: 68px;
+                    width: 210.32px;
+                }
+            }
+        }
+    }
+}

@@ -1,89 +1,24 @@
 import logo from "../assets/logo.svg";
-import styled from "styled-components";
-import colors from "../styles/colors";
 import { Link } from "react-router-dom";
+import "../styles/header.scss";
 
-const Headerstyle = styled.header`
-  position: relative;
-  width: 1240px;
-  height: 68px;
-  margin: auto;
-`;
 
-const StyleUl = styled.ul`
-  list-style: none;
-`;
-
-const AccueilLink = styled(Link)`
-  position: absolute;
-  left: 75.08%;
-  right: 13.95%;
-  top: 25%;
-  bottom: 25%;
-  font-size: 20px;
-  line-height: 142.6%;
-  display: flex;
-  align-items: flex-end;
-  text-align: right;
-  color: ${colors.primary};
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    color: ${colors.primary};
-  }
-  &:active {
-    cursor: pointer;
-    color: ${colors.primary};
-  }
-`;
-
-const AproposLink = styled(Link)`
-  position: absolute;
-  left: 87%;
-  top: 25%;
-  bottom: 25%;
-  position: absolute;
-  font-size: 20px;
-  line-height: 142.6%;
-  display: flex;
-  align-items: flex-end;
-  text-align: right;
-  color: ${colors.primary};
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    color: ${colors.primary};
-  }
-  &:active {
-    cursor: pointer;
-    color: ${colors.primary};
-  }
-`;
-
-const LogoImage = styled.img`
-  position: absolute;
-  right: 83.04%;
-  height: 68px;
-  width: 210.32px;
-`;
 
 function Header() {
   return (
-    <Headerstyle>
+    <header className="conteneur">
       <nav>
-        <StyleUl>
+        <ul className="conteneur__ul">
           <li>
-            <AccueilLink to={`/`}>Accueil</AccueilLink>
+            <Link className="conteneur__ul__accueil" to={`/`}>Accueil</Link>
           </li>
           <li>
-            <AproposLink to={`/A_propos`}>A Propos</AproposLink>
+            <Link className="conteneur__ul__accueil__propos" to={`/A_propos`}>A Propos</Link>
           </li>
-        </StyleUl>
+        </ul>
       </nav>
-      <LogoImage src={logo} alt="Logo Kasa" />
-    </Headerstyle>
+      <img src={logo} alt="Logo Kasa" className="conteneur__ul__accueil__propos__img" />
+    </header>
   );
 }
 

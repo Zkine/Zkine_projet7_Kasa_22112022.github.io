@@ -1,0 +1,65 @@
+@import"./colors.scss";
+
+
+.styleSection {
+    display: flex;
+    justify-content:space-between;
+    width: 65.16%;
+    margin: auto;
+
+    &__conteneur {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 200px;
+
+        &__titre {
+            width: 1000px;
+
+            &__h1 {
+                font-size: 26px;
+                color: $primary;
+                margin: 0;
+
+                &__pLocation {
+                    font-size: 18px;
+                    color: $primary;
+                    margin: 10px 0 30px 0;
+
+                    &__tags {
+                        width: 65.16%;
+                        font-size: 14px;
+
+                        &__spanTags {
+                            width: 115px;
+                            background-color: $primary;
+                            border-radius: 50px;
+                            color: $secondary;
+                            height: 25px;
+                            padding: 5px 25px 5px 25px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.conteneurPortrait {
+    display: flex;
+
+    &__nom {
+        width: min-content;
+        color: $primary;
+        margin-right: 10px;
+        
+        &__portrait {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
+    }
+
+
+}
