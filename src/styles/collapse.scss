@@ -2,26 +2,26 @@
 
 
 .conteneurArticle {
-  background-color: $backgroundLight;
   margin: auto;
-  width: 1024px;
+  width: 65.713%;
   border-radius: 5px;
 }
 
-.conteneurh1 {
-  width: 1024px;
+.conteneurTitre {
+  width: 82.50%;
   height: 47px;
-  border-radius: 5px;
   background-color: $primary;
   position: relative;
+  border-radius: 5px;
+  margin: auto;
 
-  &__h1 {
+  &__titre {
     color: $secondary;
     position: absolute;
     left: 20px;
     top: 20%;
-    margin: 0px;
     font-size: 24px;
+    margin: auto;
 
     &__SpanStyle {
       background-image: url(../assets/vectorhaut.svg);
@@ -41,6 +41,10 @@
 
         &__conteneurP {
           margin-bottom: 25px;
+          background-color: $backgroundLight;
+          border-radius: 5px;
+          width: 82.50%;
+          margin: auto;
         }
       }
     }
@@ -55,7 +59,7 @@
 
 .contentShow {
   color: $primary;
-  margin: auto;
+  margin-top: 0;
   font-size: 24px;
   padding: 20px 10px 10px 10px;
   max-height: 100%;

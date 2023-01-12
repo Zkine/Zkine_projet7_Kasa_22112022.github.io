@@ -12,7 +12,6 @@ function Stars({ logementFind, starsValue, starsType, starsInits, empty }) {
   const starsResult = starsType === logementFind["rating"] || (
     <img src={Etoilecolor} alt="Etoile color" />
   );
-  console.log(logementFind["tags"])
 
   return (
     <section >

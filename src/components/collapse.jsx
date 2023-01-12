@@ -1,37 +1,46 @@
 import { useState } from "react";
 import "../styles/collapse.scss";
 
-
-
 function Collapse({ paragrapheAbout }) {
-  const [Open, setIsOpen] = useState(true);
+  const [Open, setIsOpen] = useState(false);
 
   function selected(e) {
-    if (Open === e) {
+    console.log("e", e);
+    console.log("Open", e);
+    if (Open === e ) {
       return setIsOpen(true);
-    }else {
-      return setIsOpen(e)
+    } else  {
+      setIsOpen(e);
+    }
   }
-}
   return (
-      <article className="conteneurArticle">
-        {paragrapheAbout.map((element, e, index) => (
-              <div>
-                <div className="conteneurh1" key={element}>
-                  <p className="conteneurh1__h1">{element["titre"]}</p>
-                  <span 
-                    className={Open === e ? "conteneurh1__h1__SpanStyle" : "conteneurh1__h1__SpanStyle__SpanStylebas"}
-                    onClick={() => {selected(e)}}
-                  ></span>
-                </div>
-                <div className="conteneurh1__h1__SpanStyle__SpanStylebas__conteneurP" key={index}>
-                  <p className={Open === e ? "contentShow" : "content" } >
-                    {element["description"]}
-                  </p>
-                </div>
-              </div>
-        ))}
-      </article>
+    <article className="conteneurArticle">
+      {paragrapheAbout.map((element, e, index) => (
+        <div>
+          <div className="conteneurTitre" key={element}>
+            <p className="conteneurTitre__titre">{element["titre"]}</p>
+            <span
+              className={
+                Open === e
+                  ? "conteneurTitre__titre__SpanStyle"
+                  : "conteneurTitre__titre__SpanStyle__SpanStylebas"
+              }
+              onClick={() => {
+                selected(e);
+              }}
+            ></span>
+          </div>
+          <div
+            className="conteneurTitre__titre__SpanStyle__SpanStylebas__conteneurP"
+            key={index}
+          >
+            <p className={Open === e ? "contentShow" : "content"}>
+              {element["description"]}
+            </p>
+          </div>
+        </div>
+      ))}
+    </article>
   );
 }
 

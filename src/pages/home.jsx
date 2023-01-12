@@ -28,16 +28,19 @@ function Home() {
         {isLoading ? (
           <Loader />
         ) : (
-          <section className="logement">
+          
+          <section className="logementSection">
+          <div className="logementSection__logement">
             {logementData.forEach &&
               logementData.map((item) => (
-                <div className="logement__conteneur" key={item["id"]}>
+                <div className="logementSection__logement__conteneur" key={item["id"]}>
                   <Link  to={`/Logement/${item["id"]}`}>
-                    <img src={item["cover"]} alt={item["description"]} className="logement__conteneur__img"/>
-                    <figcaption className="logement__conteneur__img__descrip">{item["title"]}</figcaption>
+                    <img src={item["cover"]} alt="Logement" className="logementSection__logement__conteneur__img"/>
+                    <figcaption className="logementSection__logement__conteneur__img__descrip">{item["title"]}</figcaption>
                   </Link>
                 </div>
               ))}
+              </div>
           </section>
         )}
       </article>

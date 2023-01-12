@@ -1,16 +1,12 @@
 import { useFetch } from "../components/controllerFetch";
 import { Loader } from "../styles/Atoms";
 import { useParams } from "react-router-dom";
-import Collapse from "../components/collapse";
 import Slideshow from "../components/slideshow";
 import StarsColors from "../components/starsColors";
 import "../styles/housing.scss";
 
 function Logement() {
-  const params = useParams();
-
-
-
+  const {id} = useParams();
   const { data, isLoading, error } = useFetch(
     `http://localhost:3000/data.json`
   );
@@ -20,8 +16,7 @@ function Logement() {
   }
 
   const logementFind =
-    logementsData.forEach && logementsData.find((el) => el["id"] === params.id);
-
+    logementsData.forEach && logementsData.find((el) => el["id"] === `${id}`);
 
   return (
     <main>

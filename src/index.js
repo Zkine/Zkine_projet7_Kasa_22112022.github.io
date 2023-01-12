@@ -1,15 +1,16 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/home";
-import Housing from "./pages/housing";
-import About from "./pages/about";
-import Error from "./pages/error";
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import { createGlobalStyle } from "styled-components";
+import RouteKasa from "./components/routeKasa";
 
 const root = createRoot(document.getElementById("root"));
+
+
+
+
 
 const GlobalStyle = createGlobalStyle`
     div {
@@ -23,12 +24,7 @@ root.render(
     <Router>
       <GlobalStyle />
       <Header />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/Logement/:id" element={<Housing />} />
-        <Route exact path="/A_propos" element={<About />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <RouteKasa/>
       <Footer />
     </Router>
   </React.StrictMode>
