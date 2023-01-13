@@ -10,8 +10,8 @@ function Error() {
     <main>
       <section className="stylesection">
         <img src={page404} alt="Error 404" className="stylesection__img" />
-        <p className="stylesection__img__p" >Oups! La page que vous demandez n'existe pas.</p>
-        <Link className="stylesection__img__p__link" to={`/`}>Retourner sur la page d’accueil</Link>
+        <p className="stylesection__img__p" >Oups! La page que <br className="stylesection__img__p__br"/>vous demandez n'existe pas.</p>
+        <Link className="stylesection__img__p__br__link" to={`/`}>Retourner sur la page d’accueil</Link>
       </section>
     </main>
   );

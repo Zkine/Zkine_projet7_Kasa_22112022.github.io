@@ -5,6 +5,7 @@
     display: flex;
     justify-content:space-between;
     width: 65.713%;
+    margin: auto;
 
     &__conteneur {
         display: flex;
@@ -12,7 +13,7 @@
         margin-bottom: 200px;
 
         &__titre {
-            width: 1000px;
+            width: 620px;
 
             &__h1 {
                 font-size: 26px;
@@ -25,7 +26,6 @@
                     margin: 10px 0 30px 0;
 
                     &__tags {
-                        width: 65.713%;
                         font-size: 14px;
 
                         &__spanTags {
@@ -47,6 +47,8 @@
 
 .conteneurPortrait {
     display: flex;
+    width: 620px;
+    justify-content: flex-end;
 
     &__nom {
         width: min-content;

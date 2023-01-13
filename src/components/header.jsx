@@ -6,7 +6,7 @@ import "../styles/header.scss";
 function Header() {
   return (
     <header className="conteneur">
-      <nav>
+      <nav >
         <ul className="conteneur__ul">
           <li>
             <Link className="conteneur__ul__accueil" to={`/`}>Accueil</Link>

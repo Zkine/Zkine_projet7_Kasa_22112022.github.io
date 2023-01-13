@@ -14,3 +14,10 @@
     color: $secondary;
   }
 }
+
+
+@media screen and (max-width: 868px) {
+  .StyleFooter {
+    width: 100%;
+  }
+}

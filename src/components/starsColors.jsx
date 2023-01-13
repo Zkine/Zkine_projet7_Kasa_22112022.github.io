@@ -15,7 +15,7 @@ function Stars({ logementFind, starsValue, starsType, starsInits, empty }) {
 
   return (
     <section >
-        <div>
+        <div className="">
           {empty.map(
             (starsElem) =>
               starsInits >= starsElem && (

@@ -1,18 +1,23 @@
 import { useState } from "react";
 import "../styles/collapse.scss";
+import React from 'react';
 
 function Collapse({ paragrapheAbout }) {
   const [Open, setIsOpen] = useState(false);
 
+
   function selected(e) {
-    console.log("e", e);
-    console.log("Open", e);
+    setIsOpen(!Open);
+    
+    console.log(e);
     if (Open === e ) {
       return setIsOpen(true);
     } else  {
       setIsOpen(e);
     }
   }
+ 
+
   return (
     <article className="conteneurArticle">
       {paragrapheAbout.map((element, e, index) => (
