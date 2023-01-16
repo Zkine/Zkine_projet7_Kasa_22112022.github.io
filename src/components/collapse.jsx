@@ -1,51 +1,36 @@
 import { useState } from "react";
 import "../styles/collapse.scss";
-import React from 'react';
+import React from "react";
+import { IoIosArrowDown } from "react-icons/io";
 
-function Collapse({ paragrapheAbout }) {
+function Collapse({ titre, description }) {
   const [Open, setIsOpen] = useState(false);
-
 
   function selected(e) {
     setIsOpen(!Open);
-    
-    console.log(e);
-    if (Open === e ) {
-      return setIsOpen(true);
-    } else  {
-      setIsOpen(e);
+         console.log(e.target.children[1])
+    const arrow = e.target.children[1];
+    if (!arrow.classList.contains("rotate")) {
+      arrow.classList.add("rotate");
+    } else {
+      arrow.classList.remove("rotate");
     }
   }
- 
 
   return (
-    <article className="conteneurArticle">
-      {paragrapheAbout.map((element, e, index) => (
-        <div>
-          <div className="conteneurTitre" key={element}>
-            <p className="conteneurTitre__titre">{element["titre"]}</p>
-            <span
-              className={
-                Open === e
-                  ? "conteneurTitre__titre__SpanStyle"
-                  : "conteneurTitre__titre__SpanStyle__SpanStylebas"
-              }
-              onClick={() => {
-                selected(e);
-              }}
-            ></span>
-          </div>
-          <div
-            className="conteneurTitre__titre__SpanStyle__SpanStylebas__conteneurP"
-            key={index}
-          >
-            <p className={Open === e ? "contentShow" : "content"}>
-              {element["description"]}
-            </p>
-          </div>
+    <div className="conteneurCollapse">
+      <button className="conteneurCollapse__button" onClick={selected}>
+        <span className="conteneurCollapse__button__titre">{titre}</span>
+        <span className="conteneurCollapse__button__titre__icone">
+          <IoIosArrowDown />
+        </span>
+      </button>
+      {Open && (
+        <div className="conteneurCollapse__button__titre__icone__description">
+          {description}
         </div>
-      ))}
-    </article>
+      )}
+    </div>
   );
 }
 

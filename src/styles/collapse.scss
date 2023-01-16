@@ -1,68 +1,57 @@
 @import"./colors.scss";
 
 
-.conteneurArticle {
+.conteneurCollapse {
   margin: auto;
-  width: 65.713%;
+  width: 100%;
   border-radius: 5px;
-}
 
-.conteneurTitre {
-  width: 82.50%;
-  height: 47px;
-  background-color: $primary;
-  position: relative;
-  border-radius: 5px;
-  margin: auto;
+  &__button {
+    width: 82.50%;
+    height: 47px;
+    background-color: $primary;
+    position: relative;
+    border-radius: 5px;
+    margin: 20px auto;
+    border: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
 
-  &__titre {
-    color: $secondary;
-    position: absolute;
-    left: 20px;
-    top: 20%;
-    font-size: 24px;
-    margin: auto;
+    &__titre {
+      font-size: 24px;
+      color: $secondary;
+      margin-left: 10px;
 
-    &__SpanStyle {
-      background-image: url(../assets/vectorhaut.svg);
-      position: absolute;
-      right: 20px;
-      top: 35%;
-      width: 24px;
-      height: 15px;
+      &__icone {
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        color: $secondary;
+        margin-right: 10px;
 
-      &__SpanStylebas {
-        background-image: url(../assets/vectorbas.svg);
-        position: absolute;
-        right: 20px;
-        top: 35%;
-        width: 24px;
-        height: 15px;
-
-        &__conteneurP {
-          margin-bottom: 25px;
+        &__description {
           background-color: $backgroundLight;
-          border-radius: 5px;
-          width: 82.50%;
+          border-radius: 0px 0px 5px 5px;
+          width: 79.50%;
+          color: $primary;
           margin: auto;
+          margin-bottom: 20px;
+          margin-top: -27px;
+          font-size: 24px;
+          max-height: 100%;
+          padding: 3% 2% 1% 1%;
         }
       }
+
     }
   }
 }
 
-
-.content {
-  overflow: hidden;
-  max-height: 0;
+.rotate {
+  transform: rotate(180deg);
 }
 
-.contentShow {
-  color: $primary;
-  margin-top: 0;
-  font-size: 24px;
-  padding: 20px 10px 10px 10px;
-  max-height: 100%;
-  height: auto;
-}
+
 

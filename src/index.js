@@ -13,6 +13,9 @@ const root = createRoot(document.getElementById("root"));
 
 
 const GlobalStyle = createGlobalStyle`
+body {
+  margin:0;
+}
     div {
         font-family: 'Montserrat', Helvetica, sans-serif;
     }

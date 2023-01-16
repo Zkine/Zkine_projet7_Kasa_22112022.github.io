@@ -2,8 +2,14 @@ import ImgHome from "../assets/ImgHome.png";
 import JsnData from "../data/data.json";
 import { Link } from "react-router-dom";
 import "../styles/home.scss";
+import { useLocation } from 'react-router-dom';
+
 
 function Home() {
+
+  let location = useLocation();
+
+  console.log(location)
   return (
     <main>
       <article>

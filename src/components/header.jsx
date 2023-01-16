@@ -5,18 +5,18 @@ import "../styles/header.scss";
 
 function Header() {
   return (
-    <header className="conteneur">
+    <header className="conteneurHeader">
       <nav >
-        <ul className="conteneur__ul">
+        <ul className="conteneurHeader__ul">
           <li>
-            <Link className="conteneur__ul__accueil" to={`/`}>Accueil</Link>
+            <Link className="conteneurHeader__ul__accueil" to={`/`}>Accueil</Link>
           </li>
           <li>
-            <Link className="conteneur__ul__accueil__propos" to={`/A_propos`}>A Propos</Link>
+            <Link className="conteneurHeader__ul__accueil__propos" to={`/A_propos`}>A Propos</Link>
           </li>
         </ul>
       </nav>
-      <img src={logo} alt="Logo Kasa" className="conteneur__ul__accueil__propos__img" />
+      <img src={logo} alt="Logo Kasa" className="conteneurHeader__ul__accueil__propos__img" />
     </header>
   );
 }

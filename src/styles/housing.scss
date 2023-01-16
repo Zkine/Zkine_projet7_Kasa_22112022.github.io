@@ -3,17 +3,16 @@
 
 .styleSection {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 65.713%;
     margin: auto;
 
     &__conteneur {
         display: flex;
         flex-direction: column;
-        margin-bottom: 200px;
 
         &__titre {
-            width: 620px;
+            width: 100%;
 
             &__h1 {
                 font-size: 26px;
@@ -46,21 +45,49 @@
 }
 
 .conteneurPortrait {
+    width: 20%;
     display: flex;
-    width: 620px;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    height: auto;
+    position: relative;
 
     &__nom {
         width: min-content;
         color: $primary;
-        margin-right: 10px;
-        
+        position: absolute;
+        margin-right: 70px;
+
         &__portrait {
             width: 64px;
             height: 64px;
             border-radius: 50%;
         }
     }
+}
 
+.collapseHousing {
+    display: flex;
+    justify-content: space-around;
+    width: 71.713%;
+    margin: auto;
+    height: 370px;
+    align-items:flex-start;
 
+    &__ConteneurDescription {
+        width: 100%;
+
+        &__El {
+            width: 100%;
+        }
+    }
+    &__ConteneurEquipments {
+        width: 100%;
+
+        &__El {
+            width: 100%;
+        }
+    }    
+     
+    
 }

@@ -8,25 +8,18 @@ import Error from "./error";
 
 function Logement() {
   const { id } = useParams();
-
+  
+  
   const logementResult = JsnData.find((el) => el.id === `${id}`);
 
   if (logementResult === undefined) {
     return <Error />;
   }
 
-  const titre = [
-
-    {Fiabilité: "Fiabilité"},
-  
-    {Respect: "Respect"} ,
-  
-    {Service: "Service"} ,
-  
-    {Sécurité: "Sécurité"} 
-  ];
-
-const description = logementResult.description;
+  const titre = {
+    description: "description",
+    equipements: "equipements",
+  };
 
   return (
     <main>
@@ -57,14 +50,30 @@ const description = logementResult.description;
               alt="Portrait du créateur de l'annonce"
               className="conteneurPortrait__nom__portrait"
             />
+            <StarsColors
+              starsInits={5}
+              empty={[1, 2, 3, 4, 5]}
+              starsValue={logementResult.rating}
+              logementFind={logementResult}
+            />
           </div>
         </section>
-        <StarsColors
-          starsInits={5}
-          empty={[1, 2, 3, 4, 5]}
-          starsValue={logementResult.rating}
-          logementFind={logementResult} 
-        />
+        <section className="collapseHousing">
+          <div className="collapseHousing__ConteneurDescription">
+            <Collapse
+              titre={titre.description}
+              description={logementResult["description"]}
+              className="collapseHousing__ConteneurDescription__El"
+            />
+          </div>
+          <div className="collapseHousing__ConteneurEquipments">
+            <Collapse
+              titre={titre.equipements}
+              description={logementResult["equipments"]}
+              className="collapseHousing__ConteneurEquipments__El"
+            />
+          </div>
+        </section>
       </article>
     </main>
   );
