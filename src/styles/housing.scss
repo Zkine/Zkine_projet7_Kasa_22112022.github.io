@@ -81,6 +81,7 @@
             width: 100%;
         }
     }
+    
     &__ConteneurEquipments {
         width: 100%;
 
@@ -90,4 +91,109 @@
     }    
      
     
+}
+
+@media screen and (max-width: 923px) {
+    .styleSection {
+        width: 93.316%;
+    }
+
+
+    .collapseHousing {
+        width: 95%;
+        
+    }
+
+    .collapseHousing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 71.713%;
+        margin: auto;
+        height: 100%;
+        align-items:flex-start;
+    
+        &__ConteneurDescription {
+            width: 100%;
+    
+            &__El {
+                width: 100%;
+            }
+        }
+        
+        &__ConteneurEquipments {
+            width: 100%;
+    
+            &__El {
+                width: 100%;
+            }
+        }    
+         
+        
+    }
+}
+
+
+@media screen and (max-width: 669px) {
+    .styleSection {
+        width: 93.316%;
+        display: block;
+    }
+
+
+    .collapseHousing {
+        width: 95%;
+        
+    }
+
+    .collapseHousing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 71.713%;
+        margin: auto;
+        height: 100%;
+        align-items:flex-start;
+    
+        &__ConteneurDescription {
+            width: 100%;
+    
+            &__El {
+                width: 100%;
+            }
+        }
+        
+        &__ConteneurEquipments {
+            width: 100%;
+    
+            &__El {
+                width: 100%;
+            }
+        }    
+         
+        
+    }
+
+    .conteneurPortrait {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        position: relative;
+    
+        &__nom {
+            width: min-content;
+            color: $primary;
+            position: absolute;
+            margin-right: 70px;
+    
+            &__portrait {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+    }
 }

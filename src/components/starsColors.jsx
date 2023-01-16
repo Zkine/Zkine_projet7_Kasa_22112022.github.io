@@ -29,7 +29,7 @@ function Stars({ logementFind, starsValue, starsType, starsInits, empty }) {
           {empty.map(
             (starsElem) =>
               starsInits >= starsElem && (
-                <span className="conteneurStars__Style__initStarsColeurs" key={starsElem.toString()}>{starsInit}</span>
+                <span className="conteneurStars__Style__initStarsColeurs test" key={starsElem.toString()}>{starsInit}</span>
               )
           )}
           </div>

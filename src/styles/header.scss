@@ -57,10 +57,9 @@
 
 
 @media screen and (max-width: 868px) {
-    .conteneur {
+    .conteneurHeader {
         width: 93.316%;
-
-
+        
         &__ul {
             list-style: none;
             display: flex;
@@ -113,7 +112,7 @@
 
 
 @media screen and (max-width: 375px) {
-    .conteneur {
+    .conteneurHeader {
         width: 93.316%;
         height: 47px;
         margin: auto;

@@ -1,18 +1,55 @@
 .conteneurStars {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: flex-start;
 
   &__Style {
     display: flex;
     width: 10%;
-    
-
     &__initStarsColeurs {
 
       &__initStars {
         position: relative;
+        right: 0px;
         left: 150px;
       }
     }
+  }
+}
+
+.test {
+  position: relative;
+  right: 0px;
+  
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 669px) {
+  .conteneurStars {
+    display: flex;
+    justify-content: flex-start;
+    width: 10%;
+    
+    &__Style {
+      display: flex;
+      width: 10%;
+
+
+
+      &__initStarsColeurs {
+
+        &__initStars {
+          position: relative;
+          right: 0px;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .test {
+    position: relative;
+    right: 150px;
+    z-index: -1;
   }
 }

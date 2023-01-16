@@ -5,7 +5,6 @@
   height: auto;
 
   &__conteneurimg {
-    position: relative;
     height: 223px;
     display: flex;
     justify-content: center;
@@ -27,7 +26,6 @@
   width: 82.50%;
   height: 47px;
   background-color: $primary;
-  position: relative;
   border-radius: 5px;
 }
 
@@ -39,26 +37,13 @@
 @media screen and (max-width: 375px) {
 
   .conteneurAbout {
-    height: auto;
-    display: flex;
-    justify-content: center;
   
     &__conteneurimg {
-      position: relative;
-      height: 223px;
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      width: 335px;
-      margin: 60px 0px 60px 0px;
+      height: 89.33%;
       
   
       &__img {
-        width: 335px;
-        height: 223px;
-        border-radius: 25px;
-        filter: brightness(60%);
-        object-position: 30% 30%;
+        width: 89.33%;
       }
     }
   }
