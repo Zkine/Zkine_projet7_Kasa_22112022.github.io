@@ -87,7 +87,7 @@
           &__description {
             background-color: $backgroundLight;
             border-radius: 0px 0px 5px 5px;
-            width: 79.50%;
+            width: 92%;
             color: $primary;
             margin: auto;
             margin-bottom: 20px;
@@ -102,6 +102,56 @@
     }
   }
 
+  @media screen and (max-width: 375px) {
+
+    .conteneurCollapse {
+      margin: auto;
+      width: 100%;
+      border-radius: 5px;
+    
+      &__button {
+        width: 89.33%;
+        height: 47px;
+        background-color: $primary;
+        position: relative;
+        border-radius: 5px;
+        margin: 20px auto;
+        border: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+    
+        &__titre {
+          font-size: 13px;
+          color: $secondary;
+          margin-left: 10px;
+    
+          &__icone {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            color: $secondary;
+            margin-right: 10px;
+    
+            &__description {
+              background-color: $backgroundLight;
+              border-radius: 0px 0px 5px 5px;
+              width: 85%;
+              color: $primary;
+              margin: auto;
+              margin-bottom: 20px;
+              margin-top: -27px;
+              font-size: 12px;
+              max-height: 100%;
+              padding: 3% 2% 1% 1%;
+            }
+          }
+    
+        }
+      }
+    }
+  }
 }
 
 

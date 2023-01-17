@@ -8,7 +8,7 @@ function Collapse({ titre, description }) {
 
   function selected(e) {
     setIsOpen(!Open);
-         console.log(e.target.children[1])
+    
     const arrow = e.target.children[1];
     if (!arrow.classList.contains("rotate")) {
       arrow.classList.add("rotate");

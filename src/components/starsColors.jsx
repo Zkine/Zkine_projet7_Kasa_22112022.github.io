@@ -1,18 +1,19 @@
 import Etoilevide from "../assets/Etoileblanche.svg";
 import Etoilecolor from "../assets/Etoilecolor.svg";
-import "../styles/starsColors.scss";
 
 
 function Stars({ logementFind, starsValue, starsType, starsInits, empty }) {
  
   const starsInit = starsInits === empty || (
-    <img src={Etoilevide} alt="Etoiles vides" />
+    <img src={Etoilevide} alt="Etoiles vides" className="EtoilevideSvg" />
   );
 
   const range = [1, 2, 3, 4, 5];
 
+  
+
   const starsResult = starsType === logementFind["rating"] || (
-    <img src={Etoilecolor} alt="Etoiles coleurs" />
+    <img src={Etoilecolor} alt="Etoiles coleurs" className="EtoilecolorSvg"/>
   );
 
   return (
@@ -29,7 +30,7 @@ function Stars({ logementFind, starsValue, starsType, starsInits, empty }) {
           {empty.map(
             (starsElem) =>
               starsInits >= starsElem && (
-                <span className="conteneurStars__Style__initStarsColeurs test" key={starsElem.toString()}>{starsInit}</span>
+                <span className="conteneurStars__Style__initStarsColeurs" key={starsElem.toString()}>{starsInit}</span>
               )
           )}
           </div>

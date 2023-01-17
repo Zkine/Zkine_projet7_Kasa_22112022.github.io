@@ -28,28 +28,30 @@ function Logement() {
         <section className="styleSection">
           <div className="styleSection__conteneur">
             <div className="styleSection__conteneur__titre">
-              <h1 className="styleSection__conteneur__titre__h1">
+              <h1 className="styleSection__conteneur__titre__h1"  key={logementResult.title.toString()}>
                 {logementResult.title}
               </h1>
-              <p className="styleSection__conteneur__titre__h1__pLocation">
+              <p className="styleSection__conteneur__titre__h1__pLocation" key={logementResult.location.toString()}>
                 {logementResult.location}
               </p>
             </div>
             <div className="styleSection__conteneur__titre__h1__pLocation__tags">
               {logementResult.tags.map((element) => (
-                <span className="styleSection__conteneur__titre__h1__pLocation__tags__spanTags">
+                <span className="styleSection__conteneur__titre__h1__pLocation__tags__spanTags" key={element.toString()}>
                   {element}
                 </span>
               ))}
             </div>
           </div>
           <div className="conteneurPortrait">
-            <p className="conteneurPortrait__nom">{logementResult.host.name}</p>
-            <img
-              src={logementResult.host.picture}
-              alt="Portrait du créateur de l'annonce"
-              className="conteneurPortrait__nom__portrait"
-            />
+            <div className="conteneurPortrait--profil">
+              <p className="conteneurPortrait__nom">{logementResult.host.name}</p>
+              <img
+                src={logementResult.host.picture}
+                alt="Portrait du créateur de l'annonce"
+                className="conteneurPortrait__nom__portrait"
+              />
+            </div>
             <StarsColors
               starsInits={5}
               empty={[1, 2, 3, 4, 5]}
@@ -71,7 +73,7 @@ function Logement() {
               titre={titre.equipements}
               description={logementResult["equipments"]}
               className="collapseHousing__ConteneurEquipments__El"
-            />
+            /><br/>
           </div>
         </section>
       </article>
