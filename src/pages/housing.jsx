@@ -17,8 +17,8 @@ function Logement() {
   }
 
   const titre = {
-    description: "description",
-    equipements: "equipements",
+    description: "Description",
+    equipements: "Equipements",
   };
 
   return (
@@ -73,7 +73,7 @@ function Logement() {
               titre={titre.equipements}
               description={logementResult["equipments"]}
               className="collapseHousing__ConteneurEquipments__El"
-            /><br/>
+            />
           </div>
         </section>
       </article>
