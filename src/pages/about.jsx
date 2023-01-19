@@ -28,8 +28,6 @@ function About() {
       "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l’hôte qu’au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
   };
 
-  
-
   return (
     <main>
       <section className="conteneurAbout">
@@ -45,10 +43,10 @@ function About() {
         </div>
       </section>
       <section className="conteneurAboutCollapse">
-      <Collapse titre={titre.fiabilité} description={description.fiabilité} />
-      <Collapse titre={titre.respect} description={description.respect} />
-      <Collapse titre={titre.service} description={description.service} />
-      <Collapse titre={titre.sécurité} description={description.sécurité} />
+        <Collapse titre={titre.fiabilité} description={description.fiabilité} />
+        <Collapse titre={titre.respect} description={description.respect} />
+        <Collapse titre={titre.service} description={description.service} />
+        <Collapse titre={titre.sécurité} description={description.sécurité} />
       </section>
     </main>
   );

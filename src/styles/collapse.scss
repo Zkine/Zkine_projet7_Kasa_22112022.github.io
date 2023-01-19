@@ -34,14 +34,14 @@
         &__description {
           background-color: $backgroundLight;
           border-radius: 0px 0px 5px 5px;
-          width: 79.50%;
+          width: 76%;
           color: $primary;
           margin: auto;
           margin-bottom: 20px;
           margin-top: -27px;
           font-size: 24px;
           max-height: 100%;
-          padding: 3% 2% 1% 1%;
+          padding: 30px 0 10px 30px;
         }
       }
 
@@ -52,13 +52,14 @@
 .rotate {
   transform: rotate(180deg);
 }
+
 @media screen and (max-width: 868px) {
 
   .conteneurCollapse {
     margin: auto;
     width: 100%;
     border-radius: 5px;
-  
+
     &__button {
       width: 95%;
       height: 47px;
@@ -71,19 +72,19 @@
       justify-content: space-between;
       align-items: center;
       z-index: 1;
-  
+
       &__titre {
         font-size: 24px;
         color: $secondary;
         margin-left: 10px;
-  
+
         &__icone {
           font-size: 24px;
           display: flex;
           align-items: center;
           color: $secondary;
           margin-right: 10px;
-  
+
           &__description {
             background-color: $backgroundLight;
             border-radius: 0px 0px 5px 5px;
@@ -97,7 +98,7 @@
             padding: 3% 2% 1% 1%;
           }
         }
-  
+
       }
     }
   }
@@ -108,7 +109,7 @@
       margin: auto;
       width: 100%;
       border-radius: 5px;
-    
+
       &__button {
         width: 89.33%;
         height: 47px;
@@ -121,19 +122,19 @@
         justify-content: space-between;
         align-items: center;
         z-index: 1;
-    
+
         &__titre {
           font-size: 13px;
           color: $secondary;
           margin-left: 10px;
-    
+
           &__icone {
             font-size: 24px;
             display: flex;
             align-items: center;
             color: $secondary;
             margin-right: 10px;
-    
+
             &__description {
               background-color: $backgroundLight;
               border-radius: 0px 0px 5px 5px;
@@ -147,12 +148,9 @@
               padding: 3% 2% 1% 1%;
             }
           }
-    
+
         }
       }
     }
   }
 }
-
-
-

@@ -4,9 +4,7 @@ import Housing from "../pages/housing";
 import About from "../pages/about";
 import Error from "../pages/error";
 
-
 function RouterKasa() {
-
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />

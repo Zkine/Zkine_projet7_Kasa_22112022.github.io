@@ -3,9 +3,7 @@ import JsnData from "../data/data.json";
 import { Link } from "react-router-dom";
 import "../styles/home.scss";
 
-
 function Home() {
-
   return (
     <main>
       <article>
@@ -30,7 +28,10 @@ function Home() {
                 className="logementSection__logement__conteneur"
                 key={item.id}
               >
-                <Link to={`/Logement/${item.id}`} className="logementSection__logement__conteneur__lien">
+                <Link
+                  to={`/Logement/${item.id}`}
+                  className="logementSection__logement__conteneur__lien"
+                >
                   <img
                     src={item.cover}
                     alt="Logement"

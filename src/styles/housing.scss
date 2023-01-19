@@ -26,15 +26,19 @@
 
                     &__tags {
                         font-size: 14px;
+                        display: flex;
+                        flex-wrap: wrap-reverse;
 
                         &__spanTags {
-                            width: 115px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             background-color: $primary;
                             border-radius: 50px;
                             color: $secondary;
                             height: 25px;
                             padding: 5px 25px 5px 25px;
-                            margin-right: 10px;
+                            margin: 0 10px 10px 0;
                         }
                     }
                 }
@@ -45,59 +49,37 @@
 }
 
 .conteneurPortrait {
-    width: 20%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-end;
-    height: auto;
+    height: 109px;
 
-    &--profil {
+    &__profil {
         width: 150px;
         display: flex;
         justify-content: flex-end;
-    }
 
-    &__nom {
-        width: min-content;
-        color: $primary;
-        position: absolute;
-        margin-right: 70px;
+        &__nom {
+            width: min-content;
+            color: $primary;
+            position: absolute;
+            margin-right: 70px;
 
-        &__portrait {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
+            &__portrait {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
         }
     }
+
 }
 
 .conteneurStars {
     display: flex;
     justify-content: flex-start;
-    width: 272px;
-    &__Style {
-        display: flex;
-        width: 10%;
-        position: relative;
-        left: 365px;
-        top: 10px;
-
-        &__initStarsColeurs {
-            z-index: -1;
-
-            &__initStars {
-                position: relative;
-                right: 0px;
-                left: 150px;
-            }
-        }
-    }
-}
-
-.conteneurStars__Style,
-.conteneurStars__Style__initStarsColeurs,
-.conteneurStars__Style__initStarsColeurs__initStars {
-    transform: rotate(180deg);
+    width: 150px;
 }
 
 
@@ -106,7 +88,6 @@
     justify-content: space-around;
     width: 71.713%;
     margin: auto;
-    height: 370px;
     align-items: flex-start;
 
     &__ConteneurDescription {
@@ -119,25 +100,33 @@
 
     &__ConteneurEquipments {
         width: 100%;
-        white-space: pre-wrap;
+
+        &:last-child {
+            margin-bottom: 150px;
+        }
 
         &__El {
             width: 100%;
         }
     }
 
+    .descriptionEquipement {
+        list-style: none;
+    }
+
+
 }
 
-@media screen and (max-width: 923px) {
+@media screen and (max-width: 868px) {
+
     .styleSection {
         width: 93.316%;
-
     }
+
 
 
     .collapseHousing {
         width: 95%;
-
     }
 
     .collapseHousing {
@@ -170,44 +159,14 @@
 }
 
 
+
 @media screen and (max-width: 669px) {
     .styleSection {
         width: 93.316%;
-        display: block;
 
         &__conteneur {
             display: flex;
             flex-direction: column;
-
-            &__titre {
-                width: 100%;
-
-                &__h1 {
-                    font-size: 26px;
-                    color: $primary;
-                    margin: 0;
-
-                    &__pLocation {
-                        font-size: 18px;
-                        color: $primary;
-                        margin: 10px 0 30px 0;
-
-                        &__tags {
-                            font-size: 12px;
-
-                            &__spanTags {
-                                background-color: $primary;
-                                border-radius: 50px;
-                                color: $secondary;
-                                height: 25px;
-                                padding: 5px 5px 5px 5px;
-                                margin-right: 5px;
-                            }
-                        }
-                    }
-                }
-
-            }
         }
     }
 
@@ -244,174 +203,93 @@
 
     }
 
-    .conteneurPortrait {
-        width: 100%;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        height: 80px;
-    }
 
-    .conteneurStars {
+    @media screen and (max-width: 375px) {
+        .styleSection {
+            width: 93.316%;
+            display: block;
 
-        &__Style {
-            width: 100%;
-            position: relative;
-            left: -152px;
-            top: -14px;
+            &__conteneur {
+                display: flex;
+                flex-direction: column;
 
-            &__initStarsColeurs {
-                position: relative;
-                right: 150px;
+                &__titre {
+                    width: 100%;
 
-                &__initStars {
-                    position: relative;
-                    right: 0px;
-                    left: 0;
-                }
-            }
-        }
-    }
-
-    
-
-}
-
-@media screen and (max-width: 375px) {
-    .styleSection {
-        width: 93.316%;
-        display: block;
-
-        &__conteneur {
-            display: flex;
-            flex-direction: column;
-
-            &__titre {
-                width: 100%;
-
-                &__h1 {
-                    font-size: 18px;
-                    color: $primary;
-                    margin: 0;
-
-                    &__pLocation {
+                    &__h1 {
+                        font-size: 18px;
                         color: $primary;
-                        margin: 10px 0 30px 0;
-                        font-size: 14px;
+                        margin: 0;
 
-                        &__tags {
-                            font-size: 10px;
+                        &__pLocation {
+                            color: $primary;
+                            margin: 10px 0 30px 0;
+                            font-size: 14px;
+
+                            &__tags {
+                                font-size: 10px;
 
 
-                            &__spanTags {
-                                background-color: $primary;
-                                border-radius: 50px;
-                                color: $secondary;
-                                height: 25px;
-                                padding: 3px 5px 3px 5px;
-                                margin-right: 3px;
+                                &__spanTags {
+                                    background-color: $primary;
+                                    border-radius: 50px;
+                                    color: $secondary;
+                                    height: 25px;
+                                    padding: 0px 10px 0px 10px;
+                                    margin-right: 3px;
+                                }
                             }
                         }
                     }
+
                 }
-
-            }
-        }
-    }
-
-    .collapseHousing {
-        width: 95%;
-
-    }
-
-    .collapseHousing {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
-        margin: auto;
-        height: 100%;
-        align-items: flex-start;
-
-        &__ConteneurDescription {
-            width: 100%;
-
-            &__El {
-                width: 100%;
             }
         }
 
-        &__ConteneurEquipments {
-            width: 100%;
+        .collapseHousing {
+            width: 95%;
 
-            &__El {
-                width: 100%;
-            }
         }
 
 
-    }
 
-    .conteneurPortrait {
-        width: 93.316%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        height: auto;
-        position: relative;
-
-        &--profil {
+        .conteneurPortrait {
             display: flex;
-            justify-content: flex-end;
-        }
-
-        &__nom {
-            width: min-content;
-            color: $primary;
-            position: absolute;
-            margin-right: 35px;
-            font-size: 12px;
-
-            &__portrait {
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                position: absolute;
-                bottom: 8px;
-            }
-        }
-    }
-
-
-    .conteneurStars {
-     
-        width: 20px;
-
-        &__Style {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+            margin: auto;
+            height: 100%;
+            align-items: center;
             position: relative;
-            left: -328px;
-            margin-left: -10%;
-            top: 18px;
-            height: 50px;
 
-            &__initStarsColeurs {
-                position: relative;
+            &__profil {
 
-                &__initStars {
-                    position: relative;
-                    right: 0;
-                    left: -76px;
+                display: flex;
+                align-items: center;
+
+                &__nom {
+                    margin-right: 35px;
+                    font-size: 12px;
+
+                    &__portrait {
+                        width: 32px;
+                        height: 32px;
+                    }
                 }
             }
-        }
-    }
 
-    .EtoilevideSvg {
-        width: 15px;
-        height: 15px;
-    }
-    .EtoilecolorSvg {
-        width: 15px;
-        height: 15px;
+        }
+
+        .EtoilevideSvg {
+            left: 153px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .EtoilecolorSvg {
+            width: 15px;
+            height: 15px;
+        }
     }
 }
-

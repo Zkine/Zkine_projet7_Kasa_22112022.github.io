@@ -8,8 +8,7 @@ import Error from "./error";
 
 function Logement() {
   const { id } = useParams();
-  
-  
+
   const logementResult = JsnData.find((el) => el.id === `${id}`);
 
   if (logementResult === undefined) {
@@ -17,9 +16,13 @@ function Logement() {
   }
 
   const titre = {
-    description: "Description",
-    equipements: "Equipements",
+    description: "description",
+    equipements: "equipements",
   };
+
+  const logementResultResult = logementResult["equipments"].map((element) => (
+    <li className="descriptionEquipement">{element}</li>
+  ));
 
   return (
     <main>
@@ -28,36 +31,36 @@ function Logement() {
         <section className="styleSection">
           <div className="styleSection__conteneur">
             <div className="styleSection__conteneur__titre">
-              <h1 className="styleSection__conteneur__titre__h1"  key={logementResult.title.toString()}>
+              <h1 className="styleSection__conteneur__titre__h1">
                 {logementResult.title}
               </h1>
-              <p className="styleSection__conteneur__titre__h1__pLocation" key={logementResult.location.toString()}>
+              <p className="styleSection__conteneur__titre__h1__pLocation">
                 {logementResult.location}
               </p>
             </div>
             <div className="styleSection__conteneur__titre__h1__pLocation__tags">
               {logementResult.tags.map((element) => (
-                <span className="styleSection__conteneur__titre__h1__pLocation__tags__spanTags" key={element.toString()}>
+                <span
+                  className="styleSection__conteneur__titre__h1__pLocation__tags__spanTags"
+                  key={element.toString()}
+                >
                   {element}
                 </span>
               ))}
             </div>
           </div>
           <div className="conteneurPortrait">
-            <div className="conteneurPortrait--profil">
-              <p className="conteneurPortrait__nom">{logementResult.host.name}</p>
+            <div className="conteneurPortrait__profil">
+              <p className="conteneurPortrait__profil__nom">
+                {logementResult.host.name}
+              </p>
               <img
                 src={logementResult.host.picture}
                 alt="Portrait du créateur de l'annonce"
-                className="conteneurPortrait__nom__portrait"
+                className="conteneurPortrait__profil__nom__portrait"
               />
             </div>
-            <StarsColors
-              starsInits={5}
-              empty={[1, 2, 3, 4, 5]}
-              starsValue={logementResult.rating}
-              logementFind={logementResult}
-            />
+            <StarsColors starsInits={5} rating={logementResult.rating} />
           </div>
         </section>
         <section className="collapseHousing">
@@ -71,7 +74,7 @@ function Logement() {
           <div className="collapseHousing__ConteneurEquipments">
             <Collapse
               titre={titre.equipements}
-              description={logementResult["equipments"]}
+              description={logementResultResult}
               className="collapseHousing__ConteneurEquipments__El"
             />
           </div>

@@ -6,8 +6,6 @@ import "../styles/slideshow.scss";
 function Slideshow({ logementFind }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-
-
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide

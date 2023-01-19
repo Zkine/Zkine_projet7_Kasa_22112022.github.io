@@ -1,40 +1,37 @@
 import Etoilevide from "../assets/Etoileblanche.svg";
 import Etoilecolor from "../assets/Etoilecolor.svg";
 
-
-function Stars({ logementFind, starsValue, starsType, starsInits, empty }) {
- 
-  const starsInit = starsInits === empty || (
-    <img src={Etoilevide} alt="Etoiles vides" className="EtoilevideSvg" />
-  );
-
-  const range = [1, 2, 3, 4, 5];
-
-  
-
-  const starsResult = starsType === logementFind["rating"] || (
-    <img src={Etoilecolor} alt="Etoiles coleurs" className="EtoilecolorSvg"/>
-  );
+function Stars({ starsInits, rating }) {
+  const ranges = [Etoilevide, Etoilevide, Etoilevide, Etoilevide, Etoilevide];
+  const calcul = Number(starsInits) - Number(rating);
+  const rangeResult = ranges.slice(0, calcul);
+  const tableauCouleur = [
+    Etoilecolor,
+    Etoilecolor,
+    Etoilecolor,
+    Etoilecolor,
+    Etoilecolor,
+  ];
+  const tableauCouleurResult = tableauCouleur.slice(0, rating);
+  const tableauValue = [...tableauCouleurResult, ...rangeResult];
 
   return (
-        <div className="conteneurStars">
-        <div className="conteneurStars__Style"> 
-          {range.map(
-            (rangeElem) =>
-              starsValue >= rangeElem && (
-                <span className="conteneurStars__Style__initStarsColeurs__initStars" key={rangeElem.toString()} >
-                  {starsResult}
-                </span>
-              )
-          )}
-          {empty.map(
-            (starsElem) =>
-              starsInits >= starsElem && (
-                <span className="conteneurStars__Style__initStarsColeurs" key={starsElem.toString()}>{starsInit}</span>
-              )
-          )}
-          </div>
+    <div className="conteneurStars">
+      <div className="conteneurStars__Style">
+        {tableauValue.map((rangeElem, i) => (
+          <span
+            className="conteneurStars__Style__initStarsColeurs"
+            key={i.toString()}
+          >
+            <img
+              src={rangeElem}
+              alt="Etoiles coleurs"
+              className="EtoilecolorSvg"
+            />
+          </span>
+        ))}
       </div>
+    </div>
   );
 }
 
