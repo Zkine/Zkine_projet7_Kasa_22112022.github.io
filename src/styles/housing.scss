@@ -170,34 +170,6 @@
         }
     }
     
-    .collapseHousing {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 71.713%;
-        margin: auto;
-        height: 100%;
-        align-items: flex-start;
-
-        &__ConteneurDescription {
-            width: 100%;
-
-            &__El {
-                width: 100%;
-            }
-        }
-
-        &__ConteneurEquipments {
-            width: 100%;
-
-            &__El {
-                width: 100%;
-            }
-        }
-
-
-    }
-
 
     @media screen and (max-width: 375px) {
         .styleSection {
