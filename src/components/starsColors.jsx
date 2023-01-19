@@ -4,7 +4,6 @@ import Etoilecolor from "../assets/Etoilecolor.svg";
 function Stars({ starsInits, rating }) {
   const ranges = [Etoilevide, Etoilevide, Etoilevide, Etoilevide, Etoilevide];
   const calcul = Number(starsInits) - Number(rating);
-  const rangeResult = ranges.slice(0, calcul);
   const tableauCouleur = [
     Etoilecolor,
     Etoilecolor,
@@ -12,6 +11,8 @@ function Stars({ starsInits, rating }) {
     Etoilecolor,
     Etoilecolor,
   ];
+  
+  const rangeResult = ranges.slice(0, calcul);
   const tableauCouleurResult = tableauCouleur.slice(0, rating);
   const tableauValue = [...tableauCouleurResult, ...rangeResult];
 
