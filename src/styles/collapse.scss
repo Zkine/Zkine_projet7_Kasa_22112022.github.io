@@ -35,14 +35,14 @@
         &__description {
           background-color: $backgroundLight;
           border-radius: 0px 0px 5px 5px;
-          width: 78.50%;
+          width: 76.50%;
           color: $primary;
           margin: auto;
           margin-bottom: 20px;
           margin-top: -27px;
           font-size: 24px;
           max-height: 100%;
-          padding: 3% 2% 6% 2%;
+          padding: 5% 2% 10% 4%;
         }
       }
     }
@@ -87,7 +87,7 @@
           margin-right: 10px;
 
           &__description {
-            width: 91%;
+            width: 89%;
           }
         }
       }
@@ -103,28 +103,10 @@
 
       &__button {
         width: 89.33%;
-        height: 47px;
-        background-color: $primary;
-        position: relative;
-        border-radius: 5px;
-        margin: 20px auto;
-        border: 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 1;
-
         &__titre {
           font-size: 13px;
-          color: $secondary;
-          margin-left: 10px;
 
           &__icone {
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            color: $secondary;
-            margin-right: 10px;
 
             &__description {
               background-color: $backgroundLight;

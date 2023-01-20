@@ -22,7 +22,6 @@
         &__br {
             display: none;
 
-
             &__img {
                 height: 223px;
                 border-radius: 25px;
@@ -67,20 +66,16 @@
                         left: 15px;
                         color: $secondary;
                         width: 220px;
-
                     }
                 }
             }
         }
     }
-
 }
 
 @media screen and (max-width: 1407px) {
 
     .styleTitre__h1 {
-        position: absolute;
-        display: flex;
         width: 65.713%;
         margin: 70px 0 0 20px;
 

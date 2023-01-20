@@ -47,43 +47,15 @@
 
 @media screen and (max-width: 868px) {
     .conteneurImg {
-        position: relative;
-        height: 415px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px 0px 20px 0px;
 
         &__leftArrowStyles {
-            position: absolute;
-            top: 50%;
-            transform: translate(0, -50%);
             left: 7%;
-            z-index: 1;
-            cursor: pointer;
 
             &__rightArrowStyles {
-                position: absolute;
-                top: 50%;
-                transform: translate(0, -50%);
                 right: 6%;
-                z-index: 1;
-                cursor: pointer;
 
                 &__slideStyles {
                     width: 95%;
-                    height: 415px;
-                    border-radius: 25px;
-                    background-position: center;
-                    background-size: cover;
-
-                    &__conteur {
-                        position: absolute;
-                        bottom: 5%;
-                        transform: translate(0, -50%);
-                        font-variant-numeric: tabular-nums;
-                        color: $secondary;
-                    }
                 }
             }
         }

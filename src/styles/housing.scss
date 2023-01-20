@@ -80,7 +80,6 @@
     width: 150px;
 }
 
-
 .collapseHousing {
     display: flex;
     justify-content: space-around;
@@ -111,8 +110,6 @@
     .descriptionEquipement {
         list-style: none;
     }
-
-
 }
 
 @media screen and (max-width: 868px) {
@@ -121,42 +118,17 @@
         width: 93.316%;
     }
 
-
-
     .collapseHousing {
         width: 95%;
     }
 
     .collapseHousing {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
         width: 100%;
-        margin: auto;
         height: 100%;
         align-items: flex-start;
-
-        &__ConteneurDescription {
-            width: 100%;
-
-            &__El {
-                width: 100%;
-            }
-        }
-
-        &__ConteneurEquipments {
-            width: 100%;
-
-            &__El {
-                width: 100%;
-            }
-        }
-
-
     }
 }
-
-
 
 @media screen and (max-width: 669px) {
     .styleSection {
@@ -167,7 +139,6 @@
             flex-direction: column;
         }
     }
-    
 
     @media screen and (max-width: 375px) {
         .styleSection {
@@ -183,22 +154,17 @@
 
                     &__h1 {
                         font-size: 18px;
-                        color: $primary;
                         margin: 0;
 
                         &__pLocation {
-                            color: $primary;
                             margin: 10px 0 30px 0;
                             font-size: 14px;
 
                             &__tags {
                                 font-size: 10px;
 
-
                                 &__spanTags {
                                     background-color: $primary;
-                                    border-radius: 50px;
-                                    color: $secondary;
                                     height: 25px;
                                     padding: 0px 10px 0px 10px;
                                     margin-right: 3px;
@@ -215,20 +181,16 @@
 
         }
 
-
-
         .conteneurPortrait {
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
             width: 100%;
-            margin: auto;
             height: 100%;
             align-items: center;
             position: relative;
 
             &__profil {
-
                 display: flex;
                 align-items: center;
 
@@ -242,7 +204,6 @@
                     }
                 }
             }
-
         }
 
         .EtoilevideSvg {
