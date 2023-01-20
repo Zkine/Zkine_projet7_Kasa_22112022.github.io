@@ -20,8 +20,8 @@ function Logement() {
     equipements: "equipements",
   };
 
-  const logementResultResult = logementResult["equipments"].map((element) => (
-    <li className="descriptionEquipement">{element}</li>
+  const logementResultDom= logementResult["equipments"].map((el) => (
+    <li className="descriptionEquipement" key={el.toString()}>{el}</li>
   ));
 
   return (
@@ -74,7 +74,7 @@ function Logement() {
           <div className="collapseHousing__ConteneurEquipments">
             <Collapse
               titre={titre.equipements}
-              description={logementResultResult}
+              description={logementResultDom}
               className="collapseHousing__ConteneurEquipments__El"
             />
           </div>
