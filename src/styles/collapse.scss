@@ -57,22 +57,12 @@
 @media screen and (max-width: 868px) {
 
   .conteneurCollapse {
-    margin: auto;
-    width: 100%;
-    border-radius: 5px;
 
     &__button {
       width: 95%;
-      border: 0px;
 
-      &__titre {
-
-        &__icone {
-
-          &__description {
-            width: 87%;
-          }
-        }
+      &__titre__icone__description {
+        width: 87%;
       }
     }
   }
@@ -86,23 +76,14 @@
 
       &__button {
         width: 89.33%;
-        &__titre {
+
+        &__titre__icone {
           font-size: 13px;
 
-          &__icone {
-
-            &__description {
-              background-color: $backgroundLight;
-              border-radius: 0px 0px 5px 5px;
-              width: 79%;
-              color: $primary;
-              margin: auto;
-              margin-bottom: 20px;
-              margin-top: -27px;
-              font-size: 12px;
-              max-height: 100%;
-              padding: 8% 5% 10% 5%;
-            }
+          &__description {
+            width: 79%;
+            font-size: 12px;
+            padding: 8% 5% 10% 5%;
           }
         }
       }

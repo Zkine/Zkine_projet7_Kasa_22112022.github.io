@@ -46,17 +46,14 @@
 
 
 @media screen and (max-width: 868px) {
-    .conteneurImg {
+    .conteneurImg__leftArrowStyles {
+        left: 7%;
 
-        &__leftArrowStyles {
-            left: 7%;
+        &__rightArrowStyles {
+            right: 6%;
 
-            &__rightArrowStyles {
-                right: 6%;
-
-                &__slideStyles {
-                    width: 95%;
-                }
+            &__slideStyles {
+                width: 95%;
             }
         }
     }

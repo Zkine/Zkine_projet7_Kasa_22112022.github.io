@@ -35,12 +35,10 @@
 }
 
 @media screen and (max-width: 375px) {
-
   .conteneurAbout {
 
     &__conteneurimg {
       height: 89.33%;
-
 
       &__img {
         width: 89.33%;
@@ -50,6 +48,5 @@
 
   .conteneurAboutCollapse {
     width: 100%;
-    margin: auto;
   }
 }

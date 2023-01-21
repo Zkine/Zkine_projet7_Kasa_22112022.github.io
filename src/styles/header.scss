@@ -63,16 +63,13 @@
         &__ul {
             width: 10%;
 
-            &__accueil {
-
-                &__propos {
-                    margin-left: 10px;
+            &__accueil__propos {
+                margin-left: 10px;
 
                     &__img {
                         height: 47px;
-
                     }
-                }
+                
             }
         }
     }
@@ -83,56 +80,27 @@
     .conteneurHeader {
         height: 47px;
         margin: auto;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin-top: 40px;
 
         &__ul {
-            list-style: none;
-            display: flex;
-            width: 50%;
             padding-left: 20px;
 
             &__accueil {
                 font-size: 12px;
-                color: $primary;
-                text-decoration: none;
-                text-transform: uppercase;
 
                 &:hover {
                     text-decoration: underline;
-                    cursor: pointer;
-                    color: $primary;
-                }
-
-                &:active {
-                    cursor: pointer;
-                    color: $primary;
                 }
 
                 &__propos {
                     font-size: 12px;
-                    line-height: 142.6%;
-                    color: $primary;
-                    text-decoration: none;
-                    white-space: nowrap;
                     margin-left: 10px;
 
                     &:hover {
                         text-decoration: underline;
-                        cursor: pointer;
-                        color: $primary;
-                    }
-
-                    &:active {
-                        cursor: pointer;
-                        color: $primary;
                     }
 
                     &__img {
                         width: 43.28%;
-
                     }
                 }
             }
