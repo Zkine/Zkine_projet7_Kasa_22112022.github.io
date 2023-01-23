@@ -8,7 +8,7 @@
     height: 223px;
     display: flex;
     justify-content: center;
-    margin: 60px 0px 60px 0px;
+    margin: 60px 0px;
 
 
     &__img {
@@ -17,7 +17,6 @@
       filter: brightness(60%);
       width: 65.713%;
       object-fit: cover;
-      object-position: 25% bottom;
     }
   }
 }
@@ -34,17 +33,21 @@
   margin: auto;
 }
 
-@media screen and (max-width: 375px) {
-  .conteneurAbout {
+@media screen and (max-width: 868px) {
+  .conteneurAbout__conteneurimg {
+    height: 89.33%;
 
-    &__conteneurimg {
-      height: 89.33%;
-
-      &__img {
-        width: 89.33%;
-      }
+    &__img {
+      width: 93.316%;
     }
   }
+}
+
+.conteneurAboutCollapse {
+  width: 65.713%;
+}
+
+@media screen and (max-width: 375px) {
 
   .conteneurAboutCollapse {
     width: 100%;

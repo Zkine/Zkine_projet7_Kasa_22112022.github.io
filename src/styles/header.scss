@@ -66,10 +66,10 @@
             &__accueil__propos {
                 margin-left: 10px;
 
-                    &__img {
-                        height: 47px;
-                    }
-                
+                &__img {
+                    height: 47px;
+                }
+
             }
         }
     }
@@ -86,6 +86,7 @@
 
             &__accueil {
                 font-size: 12px;
+                text-transform: uppercase;
 
                 &:hover {
                     text-decoration: underline;

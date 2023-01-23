@@ -2,8 +2,17 @@ import ImgHome from "../assets/ImgHome.png";
 import JsnData from "../data/data.json";
 import { Link } from "react-router-dom";
 import "../styles/home.scss";
+import { useEffect } from 'react'
+
+
 
 function Home() {
+
+  useEffect(() => {
+    document.title = "Kasa"
+  })
+  
+
   return (
     <main>
       <article>
