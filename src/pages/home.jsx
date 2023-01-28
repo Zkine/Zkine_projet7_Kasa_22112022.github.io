@@ -19,9 +19,7 @@ function Home() {
         <section>
           <div className="styleTitre">
             <h1 className="styleTitre__h1">
-              Chez vous,
-              <br className="styleTitre__h1__br" />
-              partout et ailleurs
+              Chez vous, <br className="styleTitre__h1__br" />partout et ailleurs
             </h1>
             <img
               src={ImgHome}

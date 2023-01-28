@@ -8,10 +8,6 @@ import RouteKasa from "./components/routeKasa";
 
 const root = createRoot(document.getElementById("root"));
 
-
-
-
-
 const GlobalStyle = createGlobalStyle`
 body {
   margin:0;

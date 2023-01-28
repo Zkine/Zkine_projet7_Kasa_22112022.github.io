@@ -46,14 +46,43 @@
 
 
 @media screen and (max-width: 868px) {
-    .conteneurImg__leftArrowStyles {
-        left: 7%;
+    .conteneurImg {
+        height: 355px;
 
-        &__rightArrowStyles {
-            right: 6%;
+        &__leftArrowStyles {
+            left: 7%;
+            width: 24px;
+            height: 40px;
 
-            &__slideStyles {
-                width: 95%;
+            &__rightArrowStyles {
+                right: 6%;
+                width: 24px;
+                height: 40px;
+
+                &__slideStyles {
+                    width: 95%;
+                    height: 355px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .conteneurImg {
+        height: 255px;
+
+        &__leftArrowStyles {
+            width: 11.67px;
+            height: 19.8px;
+
+            &__rightArrowStyles {
+                width: 11.67px;
+                height: 19.8px;
+
+                &__slideStyles {
+                    height: 255px;
+                }
             }
         }
     }

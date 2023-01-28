@@ -10,7 +10,7 @@ function Collapse({ titre, description }) {
     setIsOpen(!Open);
 
     const arrow = e.target.children[1];
-    if (!arrow.classList.contains("rotate")) {
+    if (!arrow.classList.contains("rotate"))  {
       arrow.classList.add("rotate");
     } else {
       arrow.classList.remove("rotate");

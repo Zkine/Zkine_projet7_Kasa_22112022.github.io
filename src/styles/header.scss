@@ -13,45 +13,40 @@
     &__ul {
         list-style: none;
         display: flex;
-        width: 50%;
+
 
         &__accueil {
             font-size: 20px;
             line-height: 142.6%;
             color: $primary;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-                cursor: pointer;
-                color: $primary;
-            }
-
-            &:active {
-                cursor: pointer;
-                color: $primary;
-            }
-
-            &__propos {
-                font-size: 20px;
-                line-height: 142.6%;
-                color: $primary;
-                text-decoration: none;
-                white-space: nowrap;
-                margin-left: 65px;
-
-                &:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                    color: $primary;
-                }
-
-                &:active {
-                    cursor: pointer;
-                    color: $primary;
-                }
-            }
+            text-decoration: underline;
         }
+
+        &__propos {
+            font-size: 20px;
+            line-height: 142.6%;
+            color: $primary;
+            white-space: nowrap;
+            margin-left: 65px;
+            text-decoration: underline;
+        }
+
+        &__accueilnonsouligne {
+            font-size: 20px;
+            line-height: 142.6%;
+            color: $primary;
+            text-decoration: none;
+        }
+
+        &__proposnonsouligne {
+            font-size: 20px;
+            line-height: 142.6%;
+            color: $primary;
+            white-space: nowrap;
+            margin-left: 65px;
+            text-decoration: none;
+        }
+
     }
 }
 
@@ -60,17 +55,18 @@
     .conteneurHeader {
         width: 93.316%;
 
-        &__ul {
-            width: 10%;
-
-            &__accueil__propos {
-                margin-left: 10px;
-
-                &__img {
-                    height: 47px;
-                }
-            }
+        &__ul__propos {
+            margin-left: 10px;
         }
+
+        &__ul__proposnonsouligne {
+            margin-left: 10px;
+        }
+
+        &__ul__img {
+            height: 45px;
+        }
+
     }
 }
 
@@ -78,28 +74,31 @@
 @media screen and (max-width: 375px) {
     .conteneurHeader {
         height: 47px;
-        margin: auto;
 
-        &__ul {
-            padding-left: 20px;
-
-            &__accueil {
-                font-size: 12px;
-                text-transform: uppercase;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-
-                &__propos {
-                    font-size: 12px;
-                    margin-left: 10px;
-
-                    &__img {
-                        width: 43.28%;
-                    }
-                }
-            }
+        &__ul__accueil {
+            font-size: 12px;
+            text-transform: uppercase;
         }
+
+        &__ul__propos {
+            font-size: 12px;
+            margin-left: 10px;
+
+            
+        }
+        &__ul__img {
+            width: 43.28%;
+        }
+
+        &__ul__accueilnonsouligne {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        &__ul__proposnonsouligne {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
     }
 }
