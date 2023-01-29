@@ -10,7 +10,7 @@ function Collapse({ titre, description }) {
     setIsOpen(!Open);
 
     const arrow = e.target.children[1];
-    if (!arrow.classList.contains("rotate"))  {
+    if (!arrow.classList.contains("rotate")) {
       arrow.classList.add("rotate");
     } else {
       arrow.classList.remove("rotate");
@@ -20,13 +20,13 @@ function Collapse({ titre, description }) {
   return (
     <div className="conteneurCollapse">
       <button className="conteneurCollapse__button" onClick={selected}>
-        <span className="conteneurCollapse__button__titre">{titre}</span>
-        <span className="conteneurCollapse__button__titre__icone">
+        <span className="conteneurCollapse__titre">{titre}</span>
+        <span className="conteneurCollapse--icone">
           <IoIosArrowDown />
         </span>
       </button>
       {Open && (
-        <div className="conteneurCollapse__button__titre__icone__description">
+        <div className="conteneurCollapse__description">
           {description}
         </div>
       )}

@@ -18,20 +18,17 @@ function Stars({ starsInits, rating }) {
 
   return (
     <div className="conteneurStars">
-      <div className="conteneurStars__Style">
         {tableauValue.map((rangeElem, i) => (
           <span
-            className="conteneurStars__Style__initStarsColeurs"
             key={i.toString()}
           >
             <img
               src={rangeElem}
               alt="Etoiles coleurs"
-              className="EtoilecolorSvg"
+              className="EtoileSvg"
             />
           </span>
         ))}
-      </div>
     </div>
   );
 }

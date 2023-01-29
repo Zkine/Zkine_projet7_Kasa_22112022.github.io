@@ -30,18 +30,18 @@ function Logement() {
         <Slideshow logementFind={logementResult} />
         <section className="styleSection">
           <div className="styleSection__conteneur">
-            <div className="styleSection__conteneur__titre">
-              <h1 className="styleSection__conteneur__titre__h1">
+            <div className="styleSection__titre">
+              <h1 className="styleSection__h1">
                 {logementResult.title}
               </h1>
-              <p className="styleSection__conteneur__titre__h1__pLocation">
+              <p className="styleSection__pLocation">
                 {logementResult.location}
               </p>
             </div>
-            <div className="styleSection__conteneur__titre__h1__pLocation__tags">
+            <div className="styleSection__tags">
               {logementResult.tags.map((element) => (
                 <span
-                  className="styleSection__conteneur__titre__h1__pLocation__tags__spanTags"
+                  className="styleSection__spanTags"
                   key={element.toString()}
                 >
                   {element}
@@ -51,13 +51,13 @@ function Logement() {
           </div>
           <div className="conteneurPortrait">
             <div className="conteneurPortrait__profil">
-              <p className="conteneurPortrait__profil__nom">
+              <p className="conteneurPortrait__nom">
                 {logementResult.host.name}
               </p>
               <img
                 src={logementResult.host.picture}
                 alt="Portrait du créateur de l'annonce"
-                className="conteneurPortrait__profil__nom__portrait"
+                className="conteneurPortrait__portrait"
               />
             </div>
             <StarsColors starsInits={5} rating={logementResult.rating} />
@@ -68,14 +68,14 @@ function Logement() {
             <Collapse
               titre={titre.description}
               description={logementResult["description"]}
-              className="collapseHousing__ConteneurDescription__El"
+              className="collapseHousing__El"
             />
           </div>
           <div className="collapseHousing__ConteneurEquipments">
             <Collapse
               titre={titre.equipements}
               description={logementResultDom}
-              className="collapseHousing__ConteneurEquipments__El"
+              className="collapseHousing__El"
             />
           </div>
         </section>

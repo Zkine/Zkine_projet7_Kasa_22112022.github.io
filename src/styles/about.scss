@@ -9,15 +9,14 @@
     display: flex;
     justify-content: center;
     margin: 60px 0px;
+  }
 
-
-    &__img {
-      height: 223px;
-      border-radius: 25px;
-      filter: brightness(60%);
-      width: 65.713%;
-      object-fit: cover;
-    }
+  &__img {
+    height: 223px;
+    border-radius: 25px;
+    filter: brightness(60%);
+    width: 65.713%;
+    object-fit: cover;
   }
 }
 
@@ -36,10 +35,10 @@
 @media screen and (max-width: 868px) {
   .conteneurAbout__conteneurimg {
     height: 89.33%;
+  }
 
-    &__img {
-      width: 93.316%;
-    }
+  .conteneurAbout__img {
+    width: 93.316%;
   }
 
   .conteneurAboutCollapse {

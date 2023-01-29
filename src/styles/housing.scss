@@ -10,40 +10,40 @@
     &__conteneur {
         display: flex;
         flex-direction: column;
+    }
 
-        &__titre {
-            width: 100%;
+    &__titre {
+        width: 100%;
+    }
 
-            &__h1 {
-                font-size: 26px;
-                color: $primary;
-                margin: 0;
+    &__h1 {
+        font-size: 26px;
+        color: $primary;
+        margin: 0;
+    }
 
-                &__pLocation {
-                    font-size: 18px;
-                    color: $primary;
-                    margin: 10px 0 30px 0;
+    &__pLocation {
+        font-size: 18px;
+        color: $primary;
+        margin: 10px 0 30px 0;
+    }
 
-                    &__tags {
-                        font-size: 14px;
-                        display: flex;
-                        flex-wrap: wrap-reverse;
+    &__tags {
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
 
-                        &__spanTags {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            background-color: $primary;
-                            border-radius: 50px;
-                            color: $secondary;
-                            height: 25px;
-                            padding: 5px 25px 5px 25px;
-                            margin: 0 10px 10px 0;
-                        }
-                    }
-                }
-            }
-        }
+    &__spanTags {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary;
+        border-radius: 50px;
+        color: $secondary;
+        height: 25px;
+        padding: 5px 25px 5px 25px;
+        margin: 0 10px 10px 0;
     }
 }
 
@@ -58,19 +58,19 @@
         width: 150px;
         display: flex;
         justify-content: flex-end;
+    }
 
-        &__nom {
-            width: min-content;
-            color: $primary;
-            position: absolute;
-            margin-right: 70px;
+    &__nom {
+        width: min-content;
+        color: $primary;
+        position: absolute;
+        margin-right: 70px;
+    }
 
-            &__portrait {
-                width: 64px;
-                height: 64px;
-                border-radius: 50%;
-            }
-        }
+    &__portrait {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
     }
 }
 
@@ -89,10 +89,10 @@
 
     &__ConteneurDescription {
         width: 100%;
+    }
 
-        &__El {
-            width: 100%;
-        }
+    &__El {
+        width: 100%;
     }
 
     &__ConteneurEquipments {
@@ -101,10 +101,10 @@
         &:last-child {
             margin-bottom: 150px;
         }
+    }
 
-        &__El {
-            width: 100%;
-        }
+    &__El {
+        width: 100%;
     }
 
     .descriptionEquipement {
@@ -148,32 +148,33 @@
             &__conteneur {
                 display: flex;
                 flex-direction: column;
-
-                &__titre {
-                    width: 100%;
-
-                    &__h1 {
-                        font-size: 18px;
-                        margin: 0;
-
-                        &__pLocation {
-                            margin: 10px 0 30px 0;
-                            font-size: 14px;
-
-                            &__tags {
-                                font-size: 10px;
-
-                                &__spanTags {
-                                    background-color: $primary;
-                                    height: 25px;
-                                    padding: 0px 10px 0px 10px;
-                                    margin-right: 3px;
-                                }
-                            }
-                        }
-                    }
-                }
             }
+
+            &__titre {
+                width: 100%;
+            }
+
+            &__h1 {
+                font-size: 18px;
+                margin: 0;
+            }
+
+            &__pLocation {
+                margin: 10px 0 30px 0;
+                font-size: 14px;
+            }
+
+            &__tags {
+                font-size: 10px;
+            }
+
+            &__spanTags {
+                background-color: $primary;
+                height: 25px;
+                padding: 0px 10px 0px 10px;
+                margin-right: 3px;
+            }
+
         }
 
         .collapseHousing {
@@ -192,26 +193,22 @@
             &__profil {
                 display: flex;
                 align-items: center;
-
-                &__nom {
-                    margin-right: 35px;
-                    font-size: 12px;
-
-                    &__portrait {
-                        width: 32px;
-                        height: 32px;
-                    }
-                }
             }
+
+            &__nom {
+                margin-right: 35px;
+                font-size: 12px;
+            }
+
+            &__portrait {
+                width: 32px;
+                height: 32px;
+            }
+
+
         }
 
-        .EtoilevideSvg {
-            left: 153px;
-            width: 15px;
-            height: 15px;
-        }
-
-        .EtoilecolorSvg {
+        .EtoileSvg {
             width: 15px;
             height: 15px;
         }

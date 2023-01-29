@@ -19,12 +19,12 @@ function Home() {
         <section>
           <div className="styleTitre">
             <h1 className="styleTitre__h1">
-              Chez vous, <br className="styleTitre__h1__br" />partout et ailleurs
+              Chez vous, <br className="styleTitre__br" />partout et ailleurs
             </h1>
             <img
               src={ImgHome}
               alt="la montagne"
-              className="styleTitre__h1__br__img"
+              className="styleTitre__img"
             />
           </div>
         </section>
@@ -32,19 +32,19 @@ function Home() {
           <div className="logementSection__logement">
             {JsnData.map((item) => (
               <div
-                className="logementSection__logement__conteneur"
+                className="logementSection__conteneur"
                 key={item.id}
               >
                 <Link
                   to={`/Logement/${item.id}`}
-                  className="logementSection__logement__conteneur__lien"
+                  className="logementSection__lien"
                 >
                   <img
                     src={item.cover}
                     alt="Logement"
-                    className="logementSection__logement__conteneur__lien__img"
+                    className="logementSection__img"
                   />
-                  <figcaption className="logementSection__logement__conteneur__lien__img__descrip">
+                  <figcaption className="logementSection__descrip">
                     {item.title}
                   </figcaption>
                 </Link>

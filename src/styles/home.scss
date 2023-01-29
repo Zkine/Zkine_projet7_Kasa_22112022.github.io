@@ -16,18 +16,18 @@
         line-height: 142.6%;
         color: $secondary;
         z-index: 1;
+    }
 
-        &__br {
-            display: none;
+    &__br {
+        display: none;
+    }
 
-            &__img {
-                height: 223px;
-                border-radius: 25px;
-                filter: brightness(60%);
-                width: 65.713%;
-                object-fit: cover;
-            }
-        }
+    &__img {
+        height: 223px;
+        border-radius: 25px;
+        filter: brightness(60%);
+        width: 65.713%;
+        object-fit: cover;
     }
 }
 
@@ -44,34 +44,34 @@
         background: $backgroundLight;
         border-radius: 25px;
         padding: 20px 10px 20px 10px;
+    }
 
-        &__conteneur {
-            width: 27.19%;
-            border-radius: 10px;
-            margin: 25px 25px 25px 25px;
-            position: relative;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    &__conteneur {
+        width: 27.19%;
+        border-radius: 10px;
+        margin: 25px 25px 25px 25px;
+        position: relative;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    }
 
-            &__lien {
-                display: block;
-                height: 340px;
+    &__lien {
+        display: block;
+        height: 340px;
+    }
 
-                &__img {
-                    width: 100%;
-                    height: 340px;
-                    border-radius: 10px;
-                    object-fit: cover;
+    &__img {
+        width: 100%;
+        height: 340px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
 
-                    &__descrip {
-                        position: absolute;
-                        bottom: 15px;
-                        left: 15px;
-                        color: $secondary;
-                        width: 73.35%;
-                    }
-                }
-            }
-        }
+    &__descrip {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: $secondary;
+        width: 73.35%;
     }
 }
 
@@ -80,10 +80,14 @@
     .styleTitre__h1 {
         width: 65.713%;
         margin: 70px 0 0 20px;
+    }
+    
+    .logementSection__conteneur {
+        width: 100%;
+    }
 
-        &__br {
-            display: initial;
-        }
+    .styleTitre__br {
+        display: initial;
     }
 }
 
@@ -91,10 +95,6 @@
     .styleTitre__h1 {
         margin: 90px 0 0 20px;
         font-size: 28px;
-    }
-
-    .logementSection__logement__conteneur {
-        width: 100%;
     }
 }
 
@@ -107,18 +107,11 @@
             width: 84.33%;
             left: 50%;
             margin: 25px 0 0 15px;
+        }
 
-            &__br {
-
-                &__img {
-                    width: 93.316%;
-                    height: 111px;
-
-                    &__descrip {
-                        left: 45px;
-                    }
-                }
-            }
+        &__img {
+            width: 93.316%;
+            height: 111px;
         }
     }
 
@@ -128,31 +121,31 @@
         &__logement {
             width: 93.316%;
             padding: 0;
+        }
 
-            &__conteneur {
-                border-radius: 10px;
-                position: relative;
-                height: 255px;
+        &__conteneur {
+            border-radius: 10px;
+            position: relative;
+            height: 255px;
+        }
 
-                &__lien {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    height: 255px;
-                    margin-bottom: 20px;
+        &__lien {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 255px;
+            margin-bottom: 20px;
+        }
 
-                    &__img {
-                        width: 100%;
-                        height: 255px;
+        &__img {
+            width: 100%;
+            height: 255px;
+        }
 
-                        &__descrip {
-                            bottom: 15px;
-                            left: 15px;
-                        }
-                    }
-                }
-            }
+        &__descrip {
+            bottom: 15px;
+            left: 15px;
         }
     }
 }

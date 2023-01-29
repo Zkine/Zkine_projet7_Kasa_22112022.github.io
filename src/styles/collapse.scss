@@ -30,34 +30,34 @@
       height: 47px;
       z-index: 1;
     }
+  }
 
-    &__titre {
-      font-size: 24px;
-      color: $secondary;
-      margin-left: 10px;
-      text-transform: capitalize;
+  &__titre {
+    font-size: 24px;
+    color: $secondary;
+    margin-left: 10px;
+    text-transform: capitalize;
+  }
 
-      &__icone {
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        color: $secondary;
-        margin-right: 10px;
+  &--icone {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: $secondary;
+    margin-right: 10px;
+  }
 
-        &__description {
-          background-color: $backgroundLight;
-          border-radius: 0px 0px 5px 5px;
-          width: 74.50%;
-          color: $primary;
-          margin: auto;
-          margin-bottom: 20px;
-          margin-top: -27px;
-          font-size: 24px;
-          max-height: 100%;
-          padding: 5% 4% 10% 4%;
-        }
-      }
-    }
+  &__description {
+    background-color: $backgroundLight;
+    border-radius: 0px 0px 5px 5px;
+    width: 74.50%;
+    color: $primary;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -27px;
+    font-size: 24px;
+    max-height: 100%;
+    padding: 5% 4% 10% 4%;
   }
 }
 
@@ -68,14 +68,12 @@
 
 @media screen and (max-width: 868px) {
 
-  .conteneurCollapse {
-    &__button {
-      width: 95%;
+  .conteneurCollapse__button {
+    width: 95%;
+  }
 
-      &__titre__icone__description {
-        width: 87%;
-      }
-    }
+  .conteneurCollapse__description {
+    width: 87%;
   }
 
   @media screen and (max-width: 375px) {
@@ -87,16 +85,16 @@
 
       &__button {
         width: 89.33%;
+      }
 
-        &__titre__icone {
-          font-size: 13px;
+      &--icone {
+        font-size: 13px;
+      }
 
-          &__description {
-            width: 79%;
-            font-size: 12px;
-            padding: 8% 5% 10% 5%;
-          }
-        }
+      &__description {
+        width: 79%;
+        font-size: 12px;
+        padding: 8% 5% 10% 5%;
       }
     }
   }

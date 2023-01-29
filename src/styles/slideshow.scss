@@ -16,31 +16,31 @@
         left: 20%;
         z-index: 1;
         cursor: pointer;
+    }
 
-        &__rightArrowStyles {
-            position: absolute;
-            top: 50%;
-            transform: translate(0, -50%);
-            right: 20%;
-            z-index: 1;
-            cursor: pointer;
+    &__rightArrowStyles {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 20%;
+        z-index: 1;
+        cursor: pointer;
+    }
 
-            &__slideStyles {
-                width: 65.713%;
-                height: 415px;
-                border-radius: 25px;
-                background-position: center;
-                background-size: cover;
+    &__slideStyles {
+        width: 65.713%;
+        height: 415px;
+        border-radius: 25px;
+        background-position: center;
+        background-size: cover;
+    }
 
-                &__conteur {
-                    position: absolute;
-                    bottom: 5%;
-                    transform: translate(0, -50%);
-                    font-variant-numeric: tabular-nums;
-                    color: $secondary;
-                }
-            }
-        }
+    &__conteur {
+        position: absolute;
+        bottom: 5%;
+        transform: translate(0, -50%);
+        font-variant-numeric: tabular-nums;
+        color: $secondary;
     }
 }
 
@@ -53,17 +53,17 @@
             left: 7%;
             width: 24px;
             height: 40px;
+        }
 
-            &__rightArrowStyles {
-                right: 6%;
-                width: 24px;
-                height: 40px;
+        &__rightArrowStyles {
+            right: 6%;
+            width: 24px;
+            height: 40px;
+        }
 
-                &__slideStyles {
-                    width: 95%;
-                    height: 355px;
-                }
-            }
+        &__slideStyles {
+            width: 95%;
+            height: 355px;
         }
     }
 }
@@ -75,15 +75,15 @@
         &__leftArrowStyles {
             width: 11.67px;
             height: 19.8px;
+        }
 
-            &__rightArrowStyles {
-                width: 11.67px;
-                height: 19.8px;
+        &__rightArrowStyles {
+            width: 11.67px;
+            height: 19.8px;
+        }
 
-                &__slideStyles {
-                    height: 255px;
-                }
-            }
+        &__slideStyles {
+            height: 255px;
         }
     }
 }

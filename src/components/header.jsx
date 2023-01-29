@@ -13,13 +13,13 @@ function Header() {
       <nav>
         <ul className="conteneurHeader__ul">
           <li>
-            <Link className={location.pathname === "/" ? "conteneurHeader__ul__accueil" : "conteneurHeader__ul__accueilnonsouligne"} to={`/`}>
+            <Link className={location.pathname === "/" ? "conteneurHeader--accueil" : "conteneurHeader--accueilnonsouligne"} to={`/`}>
               Accueil
             </Link>
           </li>
           <li>
             <Link
-              className={location.pathname === "/A_propos" ? "conteneurHeader__ul__propos" : "conteneurHeader__ul__proposnonsouligne"}
+              className={location.pathname === "/A_propos" ? "conteneurHeader--propos" : "conteneurHeader--proposnonsouligne"}
               to={`/A_propos`}
             >
               A Propos
@@ -30,7 +30,7 @@ function Header() {
       <img
         src={logo}
         alt="Logo Kasa"
-        className="conteneurHeader__ul__img"
+        className="conteneurHeader__img"
       />
     </header>
   );

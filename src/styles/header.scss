@@ -13,92 +13,88 @@
     &__ul {
         list-style: none;
         display: flex;
+    }
 
+    &--accueil {
+        font-size: 20px;
+        line-height: 142.6%;
+        color: $primary;
+        text-decoration: underline;
+    }
 
-        &__accueil {
-            font-size: 20px;
-            line-height: 142.6%;
-            color: $primary;
-            text-decoration: underline;
-        }
+    &--propos {
+        font-size: 20px;
+        line-height: 142.6%;
+        color: $primary;
+        white-space: nowrap;
+        margin-left: 65px;
+        text-decoration: underline;
+    }
 
-        &__propos {
-            font-size: 20px;
-            line-height: 142.6%;
-            color: $primary;
-            white-space: nowrap;
-            margin-left: 65px;
-            text-decoration: underline;
-        }
+    &--accueilnonsouligne {
+        font-size: 20px;
+        line-height: 142.6%;
+        color: $primary;
+        text-decoration: none;
+    }
 
-        &__accueilnonsouligne {
-            font-size: 20px;
-            line-height: 142.6%;
-            color: $primary;
-            text-decoration: none;
-        }
-
-        &__proposnonsouligne {
-            font-size: 20px;
-            line-height: 142.6%;
-            color: $primary;
-            white-space: nowrap;
-            margin-left: 65px;
-            text-decoration: none;
-        }
-
+    &--proposnonsouligne {
+        font-size: 20px;
+        line-height: 142.6%;
+        color: $primary;
+        white-space: nowrap;
+        margin-left: 65px;
+        text-decoration: none;
     }
 }
-
 
 @media screen and (max-width: 868px) {
     .conteneurHeader {
         width: 93.316%;
 
-        &__ul__propos {
+        &--propos {
             margin-left: 10px;
         }
 
-        &__ul__proposnonsouligne {
+        &--proposnonsouligne {
             margin-left: 10px;
         }
 
-        &__ul__img {
+        &__img {
             height: 45px;
         }
 
     }
 }
 
-
 @media screen and (max-width: 375px) {
     .conteneurHeader {
         height: 47px;
 
-        &__ul__accueil {
+        &--accueil {
             font-size: 12px;
             text-transform: uppercase;
         }
 
-        &__ul__propos {
+        &--propos {
             font-size: 12px;
             margin-left: 10px;
 
-            
+
         }
-        &__ul__img {
+
+        &__img {
             width: 43.28%;
         }
 
-        &__ul__accueilnonsouligne {
+        &--accueilnonsouligne {
             font-size: 12px;
             text-transform: uppercase;
         }
 
-        &__ul__proposnonsouligne {
+        &--proposnonsouligne {
             font-size: 12px;
             margin-left: 10px;
         }
-
     }
 }
