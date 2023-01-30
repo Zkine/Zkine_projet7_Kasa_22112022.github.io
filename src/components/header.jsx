@@ -1,7 +1,7 @@
 import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
-import "../styles/header.scss";
 import { useLocation } from "react-router-dom";
+import "../styles/main.scss";
 
 
 function Header() {

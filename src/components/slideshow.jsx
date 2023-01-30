@@ -1,7 +1,7 @@
 import FlècheDroite from "../assets/FlècheDroite.svg";
 import FlècheGauche from "../assets/FlècheGauche.svg";
 import { useState } from "react";
-import "../styles/slideshow.scss";
+import "../styles/main.scss";
 
 function Slideshow({ logementFind }) {
   const [currentIndex, setCurrentIndex] = useState(0);

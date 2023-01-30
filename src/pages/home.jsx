@@ -1,9 +1,8 @@
 import ImgHome from "../assets/ImgHome.png";
 import JsnData from "../data/data.json";
 import { Link } from "react-router-dom";
-import "../styles/home.scss";
 import { useEffect } from 'react'
-
+import "../styles/main.scss";
 
 
 function Home() {

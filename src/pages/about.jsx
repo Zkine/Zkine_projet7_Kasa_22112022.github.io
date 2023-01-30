@@ -1,7 +1,7 @@
 import Collapse from "../components/collapse";
 import ImgAbout from "../assets/ImgAbout.png";
 import ImgAboutMobile from "../assets/ImgAboutMobile.png";
-import "../styles/about.scss";
+import "../styles/main.scss";
 
 function About() {
   const titre = {

@@ -1,6 +1,3 @@
-@import"./colors.scss";
-
-
 .conteneurImg {
     position: relative;
     height: 415px;
@@ -16,6 +13,8 @@
         left: 20%;
         z-index: 1;
         cursor: pointer;
+        color: $secondary;
+        font-size: 100px;
     }
 
     &__rightArrowStyles {
@@ -25,6 +24,7 @@
         right: 20%;
         z-index: 1;
         cursor: pointer;
+        color: $secondary;
     }
 
     &__slideStyles {

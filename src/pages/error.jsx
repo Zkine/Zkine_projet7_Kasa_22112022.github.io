@@ -1,6 +1,6 @@
 import page404 from "../assets/404.svg";
 import { Link } from "react-router-dom";
-import "../styles/error.scss";
+import "../styles/main.scss";
 
 function Error() {
   return (

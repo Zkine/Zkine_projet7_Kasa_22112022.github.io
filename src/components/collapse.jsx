@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../styles/collapse.scss";
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import "../styles/main.scss";
 
 function Collapse({ titre, description }) {
   const [Open, setIsOpen] = useState(false);

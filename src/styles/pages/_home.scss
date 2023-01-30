@@ -1,5 +1,3 @@
-@import"./colors.scss";
-
 .styleTitre {
     position: relative;
     height: 223px;
@@ -43,15 +41,14 @@
         margin: auto;
         background: $backgroundLight;
         border-radius: 25px;
-        padding: 20px 10px 20px 10px;
+        padding: 20px 0;
     }
 
     &__conteneur {
         width: 27.19%;
         border-radius: 10px;
-        margin: 25px 25px 25px 25px;
+        margin: 25px 25px;
         position: relative;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     }
 
     &__lien {
@@ -64,6 +61,7 @@
         height: 340px;
         border-radius: 10px;
         object-fit: cover;
+        position: relative;
     }
 
     &__descrip {
@@ -72,6 +70,8 @@
         left: 15px;
         color: $secondary;
         width: 73.35%;
+        z-index: 0;
+        margin: auto;
     }
 }
 
@@ -81,7 +81,7 @@
         width: 65.713%;
         margin: 70px 0 0 20px;
     }
-    
+
     .logementSection__conteneur {
         width: 100%;
     }

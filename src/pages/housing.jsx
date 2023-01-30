@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import Slideshow from "../components/slideshow";
 import StarsColors from "../components/starsColors";
-import "../styles/housing.scss";
 import Collapse from "../components/collapse";
 import JsnData from "../data/data.json";
 import Error from "./error";
+import "../styles/main.scss";
 
 function Logement() {
   const { id } = useParams();
@@ -21,7 +21,7 @@ function Logement() {
   };
 
   const logementResultDom= logementResult["equipments"].map((el) => (
-    <li className="descriptionEquipement" key={el.toString()}>{el}</li>
+    <li className="conteneurCollapse--equipement" key={el.toString()}>{el}</li>
   ));
 
   return (
