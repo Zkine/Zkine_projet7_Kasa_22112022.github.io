@@ -48,6 +48,7 @@
 @media screen and (max-width: 868px) {
     .conteneurHeader {
         width: 93.316%;
+        margin-top: 20px;
 
         &--propos {
             margin-left: 10px;
@@ -76,8 +77,6 @@
         &--propos {
             font-size: 12px;
             margin-left: 10px;
-
-
         }
 
         &__img {

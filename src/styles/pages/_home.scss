@@ -130,10 +130,8 @@
         }
 
         &__lien {
-            display: flex;
+            @include flexcenter;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             height: 255px;
             margin-bottom: 20px;
         }
@@ -158,5 +156,15 @@
 
     .logementSection {
         margin-top: 22px;
+
+        &__logement {
+            background: $secondary;
+        }
+        
+        &__conteneur {
+            margin: 10px 0px;
+        }
     }
+
+    
 }

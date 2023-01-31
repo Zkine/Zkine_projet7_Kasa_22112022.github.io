@@ -1,10 +1,9 @@
 .conteneurImg {
+    @include flexcenter;
     position: relative;
     height: 415px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 20px 0px 20px 0px;
+    color: $secondary;
 
     &__leftArrowStyles {
         position: absolute;
@@ -13,7 +12,6 @@
         left: 20%;
         z-index: 1;
         cursor: pointer;
-        color: $secondary;
         font-size: 100px;
     }
 
@@ -24,7 +22,6 @@
         right: 20%;
         z-index: 1;
         cursor: pointer;
-        color: $secondary;
     }
 
     &__slideStyles {
@@ -40,7 +37,6 @@
         bottom: 5%;
         transform: translate(0, -50%);
         font-variant-numeric: tabular-nums;
-        color: $secondary;
     }
 }
 

@@ -4,6 +4,9 @@
   border-radius: 5px;
 
   &__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 82.50%;
     height: 47px;
     background-color: $primary;
@@ -11,9 +14,6 @@
     border-radius: 5px;
     margin: 20px auto;
     border: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     &::before {
       content: "";
@@ -37,9 +37,9 @@
   }
 
   &--icone {
-    font-size: 24px;
     display: flex;
     align-items: center;
+    font-size: 24px;
     color: $secondary;
     margin-right: 10px;
   }

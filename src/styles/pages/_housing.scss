@@ -3,6 +3,7 @@
     justify-content: space-between;
     width: 65.713%;
     margin: auto;
+    color: $primary;
 
     &__conteneur {
         display: flex;
@@ -15,13 +16,11 @@
 
     &__h1 {
         font-size: 26px;
-        color: $primary;
         margin: 0;
     }
 
     &__pLocation {
         font-size: 18px;
-        color: $primary;
         margin: 10px 0 30px 0;
     }
 
@@ -32,9 +31,7 @@
     }
 
     &__spanTags {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexcenter;
         background-color: $primary;
         border-radius: 50px;
         color: $secondary;

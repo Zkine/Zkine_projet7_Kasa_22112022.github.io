@@ -1,11 +1,10 @@
 .stylesection {
-  display: flex;
+  @include flexcenter;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
   margin: auto;
   height: 647px;
+  color: $primary;
 
   &__img {
     height: 263px;
@@ -15,7 +14,6 @@
 
   &__p {
     font-size: 36px;
-    color: $primary;
   }
 
   &__br {
