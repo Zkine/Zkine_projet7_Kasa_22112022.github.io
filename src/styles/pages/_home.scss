@@ -30,7 +30,7 @@
 }
 
 .logementSection {
-    margin: 43px 0 43px 0;
+    margin: 43px 0;
 
     &__logement {
         position: relative;
@@ -46,18 +46,15 @@
 
     &__conteneur {
         width: 27.19%;
-        border-radius: 10px;
         margin: 25px 25px;
         position: relative;
     }
 
     &__lien {
-        display: block;
         height: 340px;
         border-radius: 10px;
 
         &::after {
-            display: block;
             content: "";
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
             width: 100%;
@@ -104,13 +101,6 @@
     }
 }
 
-@media screen and (max-width: 1202px) {
-    .styleTitre__h1 {
-        margin: 90px 0 0 20px;
-        font-size: 28px;
-    }
-}
-
 @media screen and (max-width: 868px) {
     .styleTitre {
         height: 111px;
@@ -119,7 +109,8 @@
         &__h1 {
             width: 84.33%;
             left: 50%;
-            margin: 25px 0 0 15px;
+            margin: 25px 0 0 0;
+            font-size: 28px;
         }
 
         &__img {
@@ -134,6 +125,7 @@
         &__logement {
             width: 93.316%;
             padding: 0;
+            background: $blanc;
         }
 
         &__conteneur {
@@ -147,6 +139,10 @@
             flex-direction: column;
             height: 255px;
             margin-bottom: 20px;
+
+            &::after {
+                height: 255px;
+            }
         }
 
         &__img {
@@ -159,8 +155,17 @@
             left: 15px;
         }
     }
+    
+    .styleTitre__br {
+        display: none;
+    }
 }
 
+@media screen and (max-width: 489px) {
+    .styleTitre__br {
+        display: initial;
+    }
+}
 
 @media screen and (max-width: 375px) {
     .styleTitre__h1 {
@@ -178,6 +183,4 @@
             margin: 10px 0px;
         }
     }
-
-
 }
