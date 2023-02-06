@@ -40,7 +40,7 @@ function Home() {
                 >
                   <img
                     src={item.cover}
-                    alt="Logement"
+                    alt="logement"
                     className="logementSection__img"
                   />
                   <figcaption className="logementSection__descrip">

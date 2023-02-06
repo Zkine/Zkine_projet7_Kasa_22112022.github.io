@@ -9,7 +9,7 @@
     align-items: center;
     width: 82.50%;
     height: 47px;
-    background-color: $primary;
+    background-color: $orange;
     position: relative;
     border-radius: 5px;
     margin: 20px auto;
@@ -31,7 +31,7 @@
 
   &__titre {
     font-size: 24px;
-    color: $secondary;
+    color: $blanc;
     margin-left: 10px;
     text-transform: capitalize;
   }
@@ -40,15 +40,15 @@
     display: flex;
     align-items: center;
     font-size: 24px;
-    color: $secondary;
+    color: $blanc;
     margin-right: 10px;
   }
 
   &__description {
-    background-color: $backgroundLight;
+    background-color: $gris;
     border-radius: 0px 0px 5px 5px;
     width: 74.50%;
-    color: $primary;
+    color: $orange;
     margin: auto;
     margin-bottom: 20px;
     margin-top: -27px;
