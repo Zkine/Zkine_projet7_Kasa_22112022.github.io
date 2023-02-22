@@ -10,40 +10,39 @@ function Home() {
   useEffect(() => {
     document.title = "Kasa"
   })
-  
 
   return (
     <main>
       <article>
         <section>
-          <div className="styleTitre">
-            <h1 className="styleTitre__h1">
-              Chez vous, <br className="styleTitre__br" />partout et ailleurs
+          <div className="styletitre">
+            <h1 className="styletitre__h1">
+              Chez vous, <br className="styletitre__br" />partout et ailleurs
             </h1>
             <img
               src={ImgHome}
               alt="la montagne"
-              className="styleTitre__img"
+              className="styletitre__img"
             />
           </div>
         </section>
-        <section className="logementSection">
-          <div className="logementSection__logement">
+        <section className="logementsection">
+          <div className="logementsection__logement">
             {JsnData.map((item) => (
               <div
-                className="logementSection__conteneur"
+                className="logementsection__conteneur"
                 key={item.id}
               >
                 <Link
                   to={`/Logement/${item.id}`}
-                  className="logementSection__lien"
+                  className="logementsection__lien"
                 >
                   <img
                     src={item.cover}
                     alt="logement"
-                    className="logementSection__img"
+                    className="logementsection__img"
                   />
-                  <figcaption className="logementSection__descrip">
+                  <figcaption className="logementsection__descrip">
                     {item.title}
                   </figcaption>
                 </Link>

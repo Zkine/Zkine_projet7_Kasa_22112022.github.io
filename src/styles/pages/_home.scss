@@ -1,4 +1,4 @@
-.styleTitre {
+.styletitre {
     position: relative;
     height: 223px;
     display: flex;
@@ -29,7 +29,7 @@
     }
 }
 
-.logementSection {
+.logementsection {
     margin: 43px 0;
 
     &__logement {
@@ -87,22 +87,22 @@
 
 @media screen and (max-width: 1407px) {
 
-    .styleTitre__h1 {
+    .styletitre__h1 {
         width: 65.713%;
         margin: 70px 0 0 20px;
     }
 
-    .logementSection__conteneur {
+    .logementsection__conteneur {
         width: 100%;
     }
 
-    .styleTitre__br {
+    .styletitre__br {
         display: initial;
     }
 }
 
 @media screen and (max-width: 868px) {
-    .styleTitre {
+    .styletitre {
         height: 111px;
         margin-top: 22px;
 
@@ -119,7 +119,7 @@
         }
     }
 
-    .logementSection {
+    .logementsection {
         margin-top: 22px;
 
         &__logement {
@@ -156,23 +156,23 @@
         }
     }
     
-    .styleTitre__br {
+    .styletitre__br {
         display: none;
     }
 }
 
 @media screen and (max-width: 489px) {
-    .styleTitre__br {
+    .styletitre__br {
         display: initial;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .styleTitre__h1 {
+    .styletitre__h1 {
         font-size: 24px;
     }
 
-    .logementSection {
+    .logementsection {
         margin-top: 22px;
 
         &__logement {

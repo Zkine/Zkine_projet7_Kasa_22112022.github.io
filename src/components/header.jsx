@@ -9,17 +9,17 @@ function Header() {
   const location = useLocation();
 
   return (
-    <header className="conteneurHeader">
+    <header className="conteneurheader">
       <nav>
-        <ul className="conteneurHeader__ul">
+        <ul className="conteneurheader__ul">
           <li>
-            <Link className={location.pathname === "/" ? "conteneurHeader--accueil" : "conteneurHeader--accueilnonsouligne"} to={`/`}>
+            <Link className={location.pathname === "/" ? "conteneurheader--accueil" : "conteneurheader--accueilnonsouligne"} to={`/`}>
               Accueil
             </Link>
           </li>
           <li>
             <Link
-              className={location.pathname === "/A_propos" ? "conteneurHeader--propos" : "conteneurHeader--proposnonsouligne"}
+              className={location.pathname === "/A_propos" ? "conteneurheader--propos" : "conteneurheader--proposnonsouligne"}
               to={`/A_propos`}
             >
               A Propos
@@ -30,7 +30,7 @@ function Header() {
       <img
         src={logo}
         alt="Logo Kasa"
-        className="conteneurHeader__img"
+        className="conteneurheader__img"
       />
     </header>
   );

@@ -1,4 +1,4 @@
-.conteneurCollapse {
+.conteneurcollapse {
   margin: auto;
   width: 100%;
   border-radius: 5px;
@@ -65,17 +65,17 @@
 
 @media screen and (max-width: 868px) {
 
-  .conteneurCollapse__button {
+  .conteneurcollapse__button {
     width: 95%;
   }
 
-  .conteneurCollapse__description {
+  .conteneurcollapse__description {
     width: 87%;
   }
 
   @media screen and (max-width: 375px) {
 
-    .conteneurCollapse {
+    .conteneurcollapse {
       margin: auto;
       width: 100%;
       border-radius: 5px;

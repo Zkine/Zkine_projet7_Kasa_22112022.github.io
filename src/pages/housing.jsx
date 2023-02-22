@@ -20,28 +20,28 @@ function Logement() {
     equipements: "equipements",
   };
 
-  const logementResultDom= logementResult["equipments"].map((el) => (
-    <li className="conteneurCollapse--equipement" key={el.toString()}>{el}</li>
+  const LogementResultDom = logementResult["equipments"].map((el) => (
+    <li className="conteneurcollapse--equipement" key={el.toString()}>{el}</li>
   ));
 
   return (
     <main>
       <article>
         <Slideshow logementFind={logementResult} />
-        <section className="styleSection">
-          <div className="styleSection__conteneur">
-            <div className="styleSection__titre">
-              <h1 className="styleSection__h1">
+        <section className="stylehousing">
+          <div className="stylehousing__conteneur">
+            <div className="stylehousing__titre">
+              <h1 className="stylehousing__h1">
                 {logementResult.title}
               </h1>
-              <p className="styleSection__pLocation">
+              <p className="stylehousing__plocation">
                 {logementResult.location}
               </p>
             </div>
-            <div className="styleSection__tags">
+            <div className="stylehousing__tags">
               {logementResult.tags.map((element) => (
                 <span
-                  className="styleSection__spanTags"
+                  className="stylehousing__spantags"
                   key={element.toString()}
                 >
                   {element}
@@ -49,33 +49,33 @@ function Logement() {
               ))}
             </div>
           </div>
-          <div className="conteneurPortrait">
-            <div className="conteneurPortrait__profil">
-              <p className="conteneurPortrait__nom">
+          <div className="conteneurportrait">
+            <div className="conteneurportrait__profil">
+              <p className="conteneurportrait__nom">
                 {logementResult.host.name}
               </p>
               <img
                 src={logementResult.host.picture}
                 alt="Portrait du créateur de l'annonce"
-                className="conteneurPortrait__portrait"
+                className="conteneurportrait__portrait"
               />
             </div>
             <StarsColors starsInits={5} rating={logementResult.rating} />
           </div>
         </section>
-        <section className="collapseHousing">
-          <div className="collapseHousing__ConteneurDescription">
+        <section className="collapsehousing">
+          <div className="collapsehousing__conteneurdescription">
             <Collapse
               titre={titre.description}
               description={logementResult["description"]}
-              className="collapseHousing__El"
+              className="collapsehousing__el"
             />
           </div>
-          <div className="collapseHousing__ConteneurEquipments">
+          <div className="collapsehousing__conteneurequipments">
             <Collapse
               titre={titre.equipements}
-              description={logementResultDom}
-              className="collapseHousing__El"
+              description={<ul className="collapsehousing__ul">{LogementResultDom}</ul>}
+              className="collapsehousing__el"
             />
           </div>
         </section>

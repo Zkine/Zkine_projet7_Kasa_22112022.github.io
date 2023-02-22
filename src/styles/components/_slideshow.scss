@@ -1,11 +1,11 @@
-.conteneurImg {
+.conteneurimg {
     @include flexcenter;
     position: relative;
     height: 415px;
     margin: 20px 0px;
     color: $blanc;
 
-    &__leftArrowStyles {
+    &__leftarrowstyles {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
@@ -15,7 +15,7 @@
         font-size: 100px;
     }
 
-    &__rightArrowStyles {
+    &__rightarrowstyles {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
@@ -24,7 +24,7 @@
         cursor: pointer;
     }
 
-    &__slideStyles {
+    &__slidestyles {
         width: 65.713%;
         height: 415px;
         border-radius: 25px;
@@ -42,22 +42,22 @@
 
 
 @media screen and (max-width: 868px) {
-    .conteneurImg {
+    .conteneurimg {
         height: 355px;
 
-        &__leftArrowStyles {
+        &__leftarrowstyles {
             left: 7%;
             width: 24px;
             height: 40px;
         }
 
-        &__rightArrowStyles {
+        &__rightarrowstyles {
             right: 6%;
             width: 24px;
             height: 40px;
         }
 
-        &__slideStyles {
+        &__slidestyles {
             width: 95%;
             height: 355px;
         }
@@ -65,20 +65,20 @@
 }
 
 @media screen and (max-width: 375px) {
-    .conteneurImg {
+    .conteneurimg {
         height: 255px;
 
-        &__leftArrowStyles {
+        &__leftarrowstyles {
             width: 11.67px;
             height: 19.8px;
         }
 
-        &__rightArrowStyles {
+        &__rightarrowstyles {
             width: 11.67px;
             height: 19.8px;
         }
 
-        &__slideStyles {
+        &__slidestyles {
             height: 255px;
         }
     }

@@ -17,7 +17,7 @@ function Stars({ starsInits, rating }) {
   const tableauValue = [...tableauCouleurResult, ...rangeResult];
 
   return (
-    <div className="conteneurStars">
+    <div className="conteneurstars">
         {tableauValue.map((rangeElem, i) => (
           <span
             key={i.toString()}
@@ -25,7 +25,7 @@ function Stars({ starsInits, rating }) {
             <img
               src={rangeElem}
               alt="Etoiles coleurs"
-              className="EtoileSvg"
+              className="etoilesvg"
             />
           </span>
         ))}

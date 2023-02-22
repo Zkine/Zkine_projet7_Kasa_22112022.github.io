@@ -24,19 +24,19 @@ function About() {
 
   return (
     <main>
-      <section className="conteneurAbout">
+      <section className="conteneurabout">
         <div>
-          <picture className="conteneurAbout__conteneurimg">
+          <picture className="conteneurabout__conteneurimg">
             <source media="(max-width: 375px)" srcSet={ImgAboutMobile} />
             <img
               src={ImgAbout}
               alt="Très belle montagne"
-              className="conteneurAbout__img"
+              className="conteneurabout__img"
             />
           </picture>
         </div>
       </section>
-      <section className="conteneurAboutCollapse">
+      <section className="conteneuraboutcollapse">
         <Collapse titre={titre.fiabilité} description={description.fiabilité} />
         <Collapse titre={titre.respect} description={description.respect} />
         <Collapse titre={titre.service} description={description.service} />

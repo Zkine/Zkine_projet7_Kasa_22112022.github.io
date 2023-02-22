@@ -23,36 +23,36 @@ function Slideshow({ logementFind }) {
   return (
     <section>
       {logementFind.pictures.length !== 1 ? (
-        <div className="conteneurImg">
+        <div className="conteneurimg">
           <img
             src={FlècheGauche}
             alt="Flèche de navigation à gauche"
-            className="conteneurImg__leftArrowStyles"
+            className="conteneurimg__leftarrowstyles"
             onClick={goToPrevious}
           />
           <img
             src={FlècheDroite}
             alt="Flèche de navigation à droite"
-            className="conteneurImg__rightArrowStyles"
+            className="conteneurimg__rightarrowstyles"
             onClick={goToNext}
           />
           <div
             style={{
               backgroundImage: `url(${logementFind.pictures[currentIndex]})`,
             }}
-            className="conteneurImg__slideStyles"
+            className="conteneurimg__slidestyles"
           ></div>
-          <div className="conteneurImg__conteur">
+          <div className="conteneurimg__conteur">
             {currentIndex + 1}/{logementFind.pictures.length}
           </div>
         </div>
       ) : (
-        <div className="conteneurImg">
+        <div className="conteneurimg">
           <div
             style={{
               backgroundImage: `url(${logementFind.pictures[currentIndex]})`,
             }}
-            className="conteneurImg__slideStyles"
+            className="conteneurimg__slidestyles"
           ></div>
         </div>
       )}

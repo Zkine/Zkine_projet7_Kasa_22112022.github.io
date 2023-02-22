@@ -18,15 +18,15 @@ function Collapse({ titre, description }) {
   }
 
   return (
-    <div className="conteneurCollapse">
-      <button className="conteneurCollapse__button" onClick={selected}>
-        <span className="conteneurCollapse__titre">{titre}</span>
-        <span className="conteneurCollapse--icone">
+    <div className="conteneurcollapse">
+      <button className="conteneurcollapse__button" onClick={selected}>
+        <span className="conteneurcollapse__titre">{titre}</span>
+        <span className="conteneurcollapse--icone">
           <IoIosArrowDown />
         </span>
       </button>
       {Open && (
-        <div className="conteneurCollapse__description">
+        <div className="conteneurcollapse__description">
           {description}
         </div>
       )}

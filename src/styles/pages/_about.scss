@@ -1,4 +1,4 @@
-.conteneurAbout {
+.conteneurabout {
   height: auto;
 
   &__conteneurimg {
@@ -17,37 +17,37 @@
   }
 }
 
-.conteneurTitre {
+.conteneurtitre {
   width: 82.50%;
   height: 47px;
   background-color: $orange;
   border-radius: 5px;
 }
 
-.conteneurAboutCollapse {
+.conteneuraboutcollapse {
   width: 65.713%;
   margin: auto;
 }
 
 @media screen and (max-width: 868px) {
-  .conteneurAbout__conteneurimg {
+  .conteneurabout__conteneurimg {
     height: 89.33%;
   }
 
-  .conteneurAbout__img {
+  .conteneurabout__img {
     width: 93.316%;
   }
 
-  .conteneurAboutCollapse {
+  .conteneuraboutcollapse {
     width: 89.401%;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .conteneurAbout__conteneurimg {
+  .conteneurabout__conteneurimg {
     margin: 15px 0px;
   }
-  .conteneurAboutCollapse {
+  .conteneuraboutcollapse {
     width: 100%;
   }
 }

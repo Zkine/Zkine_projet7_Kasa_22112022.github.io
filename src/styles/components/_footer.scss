@@ -1,4 +1,4 @@
-.StyleFooter {
+.stylefooter {
   @include flexcenter;
   background-color: #000000;
   width: 76.312%;
@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 868px) {
-  .StyleFooter {
+  .stylefooter {
     width: 100%;
   }
 }
